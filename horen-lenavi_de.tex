@@ -1,0 +1,167 @@
+\documentclass[12pt,oneside]{book}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage[german]{babel}
+\defaultfontfeatures{Ligatures=TeX} % load the tex-text font mapping by default 
+\setmainfont{Libertinus Serif}
+\setmonofont{Courier New}
+\usepackage{tikz}
+
+% This must come before hyperref
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{multicol}
+\makeatletter
+\renewenvironment{theindex}
+  {\if@twocolumn
+      \@restonecolfalse
+   \else
+      \@restonecoltrue
+   \fi
+   \setlength{\columnseprule}{0pt}
+   \setlength{\columnsep}{35pt}
+   \begin{multicols}{2}[\nchapter{\indexname}]      %Adjust the 2 for more columns
+   \markboth{\MakeUppercase\indexname}%
+            {\MakeUppercase\indexname}%
+   \thispagestyle{plain}
+   \setlength{\parindent}{0pt}
+   \setlength{\parskip}{0pt plus 0.3pt}
+   \relax
+   \let\item\@idxitem}%
+  {\end{multicols}\if@restonecol\onecolumn\else\clearpage\fi}
+\makeatother
+
+%% to use: \href{url}{link text}
+%\usepackage{hyperxmp}
+\usepackage{hyperref}
+\hypersetup{bookmarksopen=false,
+  pdfpagemode=UseNone,
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black,    % no links for footnotes; URLs will still have color
+  pdftitle={Horen Lì'fyayä LeNa'vi: Eine Referenzgrammatik des Na'vi},
+  pdfauthor={William S. Annis},
+  pdfcreator={Roland "Tìtstewan" R. S.}, % creator of the document
+  pdfkeywords={Na'vi, Grammatik, Xenolinguistik, Xenoethologie}
+}
+
+% More stylish referencing format: §2.1.3.1.
+\newcommand{\horenref}[1]{\hyperref[#1]{\S \textbf{\ref*{#1}}}}
+
+% \uline{important}   underlined text
+% \uuline{urgent}     double-underlined text
+% \uwave{boat}        wavy underline
+\usepackage{ulem}
+\usepackage{multirow}
+\usepackage{mdwlist}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{marginnote}
+
+% Better sectioning for this document.
+\usepackage[compact,rigidchapters,explicit]{titlesec}
+\setcounter{secnumdepth}{4}
+
+\titleformat{\chapter}[display]
+ {\normalfont\Large\filcenter}
+ {\titlerule[1pt]%
+  \vspace{1pt}%
+  \titlerule \vspace{1pc}%
+  \LARGE\thechapter. #1}
+ {1pc}
+ {\titlerule}
+\newcommand{\nchapter}[1]{\chapter{#1}\vskip5pc}
+
+%\titleformat{\section}[runin]{\normalfont\bfseries}{\thesection.}{.5em}{#1}[. { }]
+%\titlespacing{\section}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+\titleformat{\section}[display]
+ {\normalfont\fillast}
+ {\normalfont\bfseries \thesection. #1}
+ {1ex minus .1ex}
+ {\small}
+\titlespacing{\section}{3pc}{*4}{-1em}[3pc]
+
+\titleformat{\subsection}[runin]{\normalfont\bfseries}{\thesubsection.}{.5em}{#1}[. { }]
+\titlespacing{\subsection}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries\small}{\thesubsubsection.}{.5em}{}[ { }]
+\titlespacing{\subsubsection}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+
+\titleformat{\paragraph}[runin]{\normalfont\bfseries\small}{\theparagraph.}{.5em}{}[ { }]
+\titlespacing{\paragraph}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+
+% For interlinears.
+\usepackage{gb4e}
+\noautomath     % keep _ and ^ as normal, please
+\let\eachwordone=\bf
+\let\eachwordtwo=\footnotesize
+\let\eachwordthree=\footnotesize
+% The spacing is wasteful in the default interlinear example environment.
+\newenvironment{interlin}%
+  {\begin{exe}%
+   \ex\ignorespaces}%
+  {\end{exe}\ignorespacesafterend}
+\renewcommand{\trans}[1]{\glt \textit{#1}}
+
+
+% Macros.
+\newcommand{\N}[1]{\textbf{#1}}     % for Na'vi
+% Annotate Na'vi examples as being from Paul or from a film.
+\newcommand{\Npawl}[1]{\marginpar{\small$\mathcal{F}$}\textbf{#1}}
+\newcommand{\Ipawl}{\marginpar{\small$\mathcal{F}$}}
+\newcommand{\Nfilm}[1]{\marginpar{\small$\mathcal{A}$}\textbf{#1}}
+\newcommand{\Ifilm}{\marginpar{\small$\mathcal{A}$}}
+\newcommand{\NfilmWoW}[1]{\marginpar{\small$\mathcal{A}^2$}\textbf{#1}}
+\newcommand{\E}[1]{\textit{#1}}     % for English
+\newcommand{\I}[1]{\textsc{#1}}     % for Interlinears
+\newcommand{\INF}[1]{$‹$#1$›$}      % infix notation
+\newcommand{\ACC}[1]{\uline{#1}}    % accenting
+\newcommand{\POINT}{\noindent\textbf{•} }
+\newcommand{\QUAESTIO}[1]{\textcolor{magenta}{#1}}
+
+% Citations for where the data comes from.
+% \nhorcitation{text}{date}{url}
+\newcommand{\nhorcitation}[3]{{\scriptsize{}\href{#3}{#1 (#2)}}}
+\newcommand{\NTeri}[2]{\nhorcitation{NT}{#1}{#2}}
+\newcommand{\LNWiki}[2]{\nhorcitation{Wiki}{#1}{#2}}
+\newcommand{\LNForum}[2]{\nhorcitation{Forum}{#1}{#2}}
+\newcommand{\Ultxa}[2]{\nhorcitation{Ultxa}{#1}{#2}}
+\newcommand{\LanguageLog}{\nhorcitation{LangLog}{9/12/2009}{https://languagelog.ldc.upenn.edu/nll/?p=1977}}
+% TEMPORARY - until KP gets back from his vacation
+\newcommand{\Omaticon}{\nhorcitation{OmatiCon}{15/1/2023}{https://www.youtube.com/watch?v=Rb_ZF9ZwzAM}}
+
+% Dark Mode: uncomment the following three lines to produce a
+% dark-mode version of the document.  Note that it doesn't cope with
+% the TOC properly.  Everything else is fine.
+%\usepackage{xcolor}
+%\pagecolor[rgb]{0,0,0} %black
+%\color[rgb]{0.6,0.6,0.6} %grey
+
+\begin{document}
+\frenchspacing
+%\reversemarginpar
+
+\title{Horen Lì'fyayä leNa'vi\\Eine Referenzgrammatik des Na'vi}
+\author{William S. Annis\footnote{Übersetzt von Roland ``Tìtstewan'' R. S.}\\Editor}
+\date{Version 1.34, \today\footnote{Dieses Werk ist lizenziert unter Creative Commons Attribution-ShareAlike License, Version 4.0. Um eine Kopie dieser Lizenz einzusehen, besuche \texttt{https://creativecommons.org/licenses/by-sa/4.0/}.}}
+\maketitle
+
+\setcounter{tocdepth}{2}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+
+\input intro
+\input lands
+\input morphology
+\input numbers
+\input lingop
+\input syntax
+\input pragma
+\input semantics
+
+\appendix
+{\small \printindex}
+
+\end{document}
