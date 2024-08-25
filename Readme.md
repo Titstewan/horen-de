@@ -6,4 +6,4 @@ Dies sind die Quelldateien, die für die Erstellung des PDF-Dokument erforderlic
 
 [Horen - Eine Referenzgrammatik des Na'vi](https://files.learnnavi.org/docs/horen-lenavi_de.pdf)
 
-Für die Kompilierung der PDF-Datei wurde MikTeX und TeX-Studio werdendet.
+Für die Kompilierung der PDF-Datei wurde MikTeX und TeX-Studio verwendet.
