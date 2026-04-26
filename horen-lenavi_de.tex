@@ -162,6 +162,9 @@
 \input semantics
 
 \appendix
-{\small \printindex}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+{\small 
+\input{tables}
+\printindex}
 
 \end{document}
