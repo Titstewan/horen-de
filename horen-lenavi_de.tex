@@ -57,7 +57,7 @@
 \usepackage{mdwlist}
 \usepackage{color}
 \usepackage{multicol}
-\usepackage{marginnote}
+\usepackage{marginnote}[2017/04/22]
 
 % Better sectioning for this document.
 \usepackage[compact,rigidchapters,explicit]{titlesec}
@@ -108,7 +108,41 @@
 % Macros.
 \newcommand{\N}[1]{\textbf{#1}}     % for Na'vi
 % Annotate Na'vi examples as being from Paul or from a film.
-\newcommand{\Npawl}[1]{\marginpar{\small$\mathcal{F}$}\textbf{#1}}
+\newif\ifingloss
+\inglossfalse
+
+\newif\ifNpawlmark
+\Npawlmarkfalse
+
+\newcommand{\Npawl}[1]{%
+	\textbf{#1}%
+	\ifingloss
+	\global\Npawlmarktrue
+	\else
+	\marginnote{\small$\mathcal{F}$}%
+	\fi
+}
+
+\makeatletter
+
+\let\oldglll\glll
+\def\glll{%
+	\global\inglosstrue
+	\oldglll
+}
+
+\def\gl@stop{%
+	{\hskip -\glossglue}%
+	\ifNpawlmark
+	\marginnote{\small$\mathcal{F}$}%
+	\global\Npawlmarkfalse
+	\fi
+	\unhbox\gline
+\end{flushleft}%
+\global\inglossfalse
+}
+
+\makeatother
 \newcommand{\Ipawl}{\marginpar{\small$\mathcal{F}$}}
 \newcommand{\Nfilm}[1]{\marginpar{\small$\mathcal{A}$}\textbf{#1}}
 \newcommand{\Ifilm}{\marginpar{\small$\mathcal{A}$}}
