@@ -114,12 +114,24 @@
 \newif\ifNpawlmark
 \Npawlmarkfalse
 
+\newif\ifNfilmmark
+\Nfilmmarkfalse
+
 \newcommand{\Npawl}[1]{%
 	\textbf{#1}%
 	\ifingloss
 	\global\Npawlmarktrue
 	\else
 	\marginnote{\small$\mathcal{F}$}%
+	\fi
+}
+
+\newcommand{\Nfilm}[1]{%
+	\textbf{#1}%
+	\ifingloss
+	\global\Nfilmmarktrue
+	\else
+	\marginnote{\small$\mathcal{A}$}%
 	\fi
 }
 
@@ -137,6 +149,10 @@
 	\marginnote{\small$\mathcal{F}$}%
 	\global\Npawlmarkfalse
 	\fi
+	\ifNfilmmark
+	\marginnote{\small$\mathcal{A}$}%
+	\global\Nfilmmarkfalse
+	\fi
 	\unhbox\gline
 \end{flushleft}%
 \global\inglossfalse
@@ -144,7 +160,6 @@
 
 \makeatother
 \newcommand{\Ipawl}{\marginpar{\small$\mathcal{F}$}}
-\newcommand{\Nfilm}[1]{\marginpar{\small$\mathcal{A}$}\textbf{#1}}
 \newcommand{\Ifilm}{\marginpar{\small$\mathcal{A}$}}
 \newcommand{\NfilmWoW}[1]{\marginpar{\small$\mathcal{A}^2$}\textbf{#1}}
 \newcommand{\E}[1]{\textit{#1}}     % for English

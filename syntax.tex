@@ -4,7 +4,7 @@
 
 \subsection{Transitivität} Na'vi kennzeichnet das Subjekt von transitiven und intransitiven Verben unterschiedlich. Um einen Na'vi-Satz mit einem Verb zu bilden, muss man verstehen, wie Transitivität funktioniert, d. h. für Na'vi ist ein tieferes Verständnis von Transitivität erforderlich als für das Erlernen vieler menschlicher Sprachen.\footnote{Im Gegensatz zu Sprechern des Englischen haben es Sprecher des Deutschen hier einfacher, da sich ein transitives Verb anhand des notwendigen Akkusativobjektes (das direkte Objekt) erkennen lässt. Im Englischen ist die Unterscheidung, ob ein Verb transitiv oder intransitiv ist, aufgrund fehlender eindeutiger Kasusmarkierung ungleich schwieriger. Zusätzlich kompliziert wird es (im Englischen wie im Deutschen) dadurch, dass es sehr oft nicht das Verb ist, das transitiv oder intransitiv ist, sondern die gesamte Satzkonstruktion. So ist ,I hunt‘ (,Ich jage‘) intransitiv und ,I hunt the prey‘ (,Ich jage die Beute‘) transitiv. Für das Na'vi ist es ebenfalls am besten, Transitivität als ein satz- statt als ein rein wortbasiertes Phänomen zu verstehen.}\index{Transitivität}
 
-\subsubsection{} Viele Verbalkomposita entstehen dadurch, dass ein unflektiertes Substantiv, Adjektiv oder gelegentlich eine Interjektion mit dem Verbstamm \N{si} \E{tun, machen} gekoppelt wird, der nur in diesen Verbindungen verwendet wird, \N{irayo si} \E{danken}, \N{kavuk si} \E{verraten}. Diese Verben sind immer intransitiv und verwenden den Dativ für ihr Objekt
+\subsubsection{} Viele Verbalkomposita entstehen dadurch, dass ein unflektiertes Substantiv, Adjektiv oder gelegentlich eine Interjektion mit dem Hilfsverb \N{si} \E{tun, machen} gekoppelt wird, das nur in diesen Verbindungen verwendet wird, \N{irayo si} \E{danken}, \N{kavuk si} \E{verraten}. Diese Verben sind immer intransitiv und verwenden den Dativ für ihr Objekt
 (\horenref{syn:case:dative-si}).
 
 \subsubsection{} Verben mit dem Reflexivinfix \N{\INF{äp}} sind immer intransitiv, Verben mit dem Kausativinfix \N{\INF{eyk}} immer transitiv.
@@ -14,14 +14,31 @@
 Verben, die sowohl im Kausativ als auch im Reflexiv stehen, werden mit der Infixgruppe \N{\INF{äp}\INF{eyk}} markiert. Die Transitivität dieser Formen ist komplexer, abhängig von der Transitivität des ursprünglichen Ausdrucks:
 
 \begin{itemize*}
-	\item Ist der ursprüngliche Ausdruck intransitiv, dominiert \N{\INF{äp}} und das Subjekt steht im Absolutiv: \Npawl{Oe täpeykaron.} \E{Ich bringe mich selbst dazu, zu jagen.}
-	\item Ist der ursprüngliche Ausdruck transitiv, dominiert \N{\INF{eyk}} und das Subjekt steht im Agens: \Npawl{Oel täpeykaron yerikit.} \E{Ich bringe mich selbst dazu, einen Yerik zu jagen.}
+	\item Ist der ursprüngliche Ausdruck intransitiv (z. B. \N{oe taron} \E{Ich jage}), dominiert \N{\INF{äp}} und das Subjekt steht im Absolutiv: 
+	
+	\begin{interlin}
+		\glll \Npawl{}Oe täpeykaron. \\
+		oe t\INF{äp}\INF{eyk}aron \\
+		\I{1sg} jagen\I{\INF{refl}\INF{caus}}\\
+		\trans{Ich bringe mich selbst dazu, zu jagen.}
+	\end{interlin}
+	
+	\pagebreak
+	
+	\item Ist der ursprüngliche Ausdruck transitiv (z. B. \N{oel taron yerikit} \E{Ich jage einen Hexapeden}), dominiert \N{\INF{eyk}} und das Subjekt steht im Agens: 
+	
+	\begin{interlin}
+		\glll \Npawl{}Oel täpeykaron yerikit. \\
+		oe-l t\INF{äp}\INF{eyk}aron yerik-it \\
+		\I{1sg-agt} jagen\I{\INF{refl}\INF{caus}} Hexapede-\I{pat}\\
+		\trans{Ich bringe mich selbst dazu, einen Hexapeden zu jagen.}
+	\end{interlin}
 \end{itemize*} 
 
 \noindent Dieses Muster entspricht dem Verb ohne jegliche Änderung seiner Transitivität; \N{oe taron} verhält sich zu \N{oel taron yerikit} wie \N{oe täpeykaron} zu \N{oel täpeykaron yerikit}.
 \LNForum{20/8/2021}{https://forum.learnnavi.org/index.php?msg=676894}
 
-\subsection{Dreigeteiltheit} Na'vi markiert Substantive und Pronomen unterschiedlich, wenn sie das Subjekt eines intransitiven Satzes, das Subjekt eines transitiven Satzes oder das direkte Objekt eines transitiven Satzes sind (\horenref{syn:cases}).
+\subsection{Dreigeteiltheit} Na'vi markiert Substantive und Pronomen unterschiedlich; je nachdem, ob sie das Subjekt eines intransitiven Satzes, das Subjekt eines transitiven Satzes oder das direkte Objekt eines transitiven Satzes sind (\horenref{syn:cases}).
 
 \subsubsection{} Obwohl das deutsche Konzept des ,Subjekts‘ eines Verbs im Na'vi in Abhängigkeit von der Transitivität der Verbalphrase zweigeteilt ist, gilt diese Unterteilung nicht für Partizipien. Es gibt ein adjektivisches Partizip Passiv und ein adjektivisches Partizip Aktiv, die für Subjekte sowohl im Absolutiv als auch im Agens verwendet werden (\horenref{morph:pre-first}).
 
@@ -32,121 +49,211 @@ Verben, die sowohl im Kausativ als auch im Reflexiv stehen, werden mit der Infix
 \subsubsection{} Bei der Verwendung mit einem attributiven Zahlwort erhält das Substantiv keine Numerusmarkierung, \N{mrra zìsìt} \E{fünf Jahre}.
 \index{Plural!unmarkiert mit Zahlwörtern}\LNWiki{18/6/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/March-June\%23Numbers_take_nouns_in_the_SINGULAR.}
 
-\subsubsection{} Die Mengenadjektive -- \N{'a'aw} \E{einige, mehrere}, \N{hol} \E{wenige}, \N{pxay} \E{viele}, \N{polpxay, holpxaype} \E{wie viele?} -- stehen in Adjektivphrasen ebenfalls mit Substantiven im Singular, \Npawl{lu poru \uwave{'a'awa 'eylan}} \E{Er hat \uwave{mehrere Freunde}}.
+\subsubsection{} Mengenadjektive -- \N{'a'aw} \E{einige, mehrere}, \N{hol} \E{wenige}, \N{pxay} \E{viele} -- sowie die Fragewörter \N{polpxay, holpxaype} \E{wie viele?} stehen in Adjektivphrasen ebenfalls mit Substantiven im Singular:
+
+\begin{interlin}
+	\glll \Npawl{}Lu poru \uwave{'a'awa} \uwave{'eylan}. \\
+	lu po-ru 'a'aw-a 'eylan \\
+	sein \I{3sg-dat} mehrere-\I{lig} Freund \\
+	\trans{Er hat \uwave{mehrere Freunde}.}
+\end{interlin}
 \index{'a'aw@\textbf{'a'aw}}\index{hol@\textbf{hol}}\index{pxay@\textbf{pxay}}\index{polpxay@\textbf{polpxay}}\index{holpxaype@\textbf{holpxaype}}\NTeri{16/7/2010}{https://naviteri.org/2010/07/vocabulary-update/}
 
-\subsubsection{} In der Umgangssprache kann die Anzahl mit dem Adjektiv \N{pxay} \E{viele} markiert werden: \Npawl{lu awngar \uwave{aytele apxay} a teri sa'u pivlltxe} \E{Wir haben \uwave{viele Angelegenheiten} zu besprechen}.
-\index{pxay@\textbf{pxay}!mit Substantiv im Plural}\\
-\LNForum{1/3/2010}{https://forum.learnnavi.org/index.php?msg=123484}
+\subsubsection{} In der Umgangssprache kann jedoch \N{pxay} \E{viele} zusammen mit einem Substantiv im Plural stehen: 
 
-\subsubsection{} Bei den Kopulaverben (\N{lu} und \N{slu}) lautet die Grundregel der Numerusmarkierung, dass bei Bezugnahme auf dieselbe Einheit der Numerus nur einmal pro Satz markiert werden darf.\label{syn:noun:concord}
+\begin{interlin}
+	\glll \Npawl{}Lu awngar \uwave{aytele} \uwave{apxay} a teri sa'u pivlltxe. \\
+	lu ay-oe-nga-r ay-txele a-pxay a teri ay-tsa-'u p\INF{iv}lltxe \\
+	sein \I{pl-1sg-2sg-dat} \I{pl}-Thema \I{lig}-viel \I{rel} bezüglich \I{pl-dem.dis}-Ding sprechen\I{\INF{subj}} \\
+	\trans{Wir haben \uwave{viele Themen} zu besprechen.}
+\end{interlin}
+\index{pxay@\textbf{pxay}!mit Substantiv im Plural} \LNForum{1/3/2010}{https://forum.learnnavi.org/index.php?msg=123484}
 
-\begin{quotation}
-	\noindent\Npawl{Menga lu karyu.} \E{Ihr zwei seid Lehrer}.\\
-	\noindent\Npawl{Fo lu karyu.} \E{Sie sind Lehrer}.\\
-	\noindent\Npawl{Menga lu oeyä 'eylan.} \E{Ihr zwei seid meine Freunde}.
-\end{quotation}
+\subsubsection{} Bei den Kopulaverben \N{lu} und \N{slu} darf bei Bezugnahme auf dieselbe Einheit der Numerus nur einmal pro Satz markiert werden:\label{syn:noun:concord}
+
+\begin{interlin} \label{number:ex01}
+	\glll \Npawl{}Menga lu karyu. \\
+	me-nga lu karyu \\
+	\I{du-2sg} sein Lehrer \\
+	\trans{Ihr zwei seid Lehrer.}
+\end{interlin}
+
+\begin{interlin} \label{number:ex02}
+	\glll \Npawl{}Fo lu karyu. \\
+	ay-po lu karyu \\
+	\I{pl-3sg} sein Lehrer \\
+	\trans{Sie sind Lehrer.}
+\end{interlin}
+
+\begin{interlin} \label{number:ex03}
+	\glll \Npawl{}Menga lu oeyä 'eylan. \\
+	me-nga lu oe-yä 'eylan \\
+	\I{du-2sg} sein \I{1sg-gen} Freund \\
+	\trans{Ihr zwei seid meine Freunde.}
+\end{interlin}
 \index{lu@\textbf{lu}!Numeruskongruenz}\index{slu@\textbf{slu}!Numeruskongruenz}
 \index{Plural!mit \textbf{lu} und \textbf{slu}}
 
-\noindent In den ersten beiden Sätzen hat \N{karyu} keine Numerusmarkierung, da die Pronomen bereits markiert sind, und dasselbe gilt für \N{'eylan} im dritten Satz. Siehe aber \horenref{syn:pron:q-number} für das Interrogativpronomen \N{tupe}.
+\noindent In den Beispielen (\ref{number:ex01}) und (\ref{number:ex02}) hat \N{karyu} keine Numerusmarkierung, da die Pronomen bereits markiert sind; dasselbe gilt für \N{'eylan} in Beispiel (\ref{number:ex03}). Siehe aber \horenref{syn:pron:q-number} für das Interrogativpronomen \N{tupe}.
 \NTeri{30/7/2011}{https://naviteri.org/2011/07/number-in-na\%E2\%80\%99vi/}
 
 \subsubsection{} Bei allgemeinen Aussagen über eine Gruppe oder Klasse werden Substantive im Singular verwendet: \index{allgemeine Aussagen} 
 
 \begin{interlin}
-	\glll Nantangìl yom yerikit. \\
+	\glll \Npawl{}Nantangìl yom yerikit. \\
 	nantang-ìl yom yerik-it \\
 	Natterwolf-\I{agt} fressen Hexapede-\I{pat} \\
-	\trans{Natterwölfe fressen Hexapeden.} \Ipawl{}
+	\trans{Natterwölfe fressen Hexapeden.}
 \end{interlin}
 \NTeri{30/7/2011}{https://naviteri.org/2011/07/number-in-na\%E2\%80\%99vi/}
 
-\subsection{Indefinit} Das Adjektiv \N{lahe} \E{weitere/r/s, andere/r/s} bedeutet \E{andere/r/s, i. S. v. ,unterschiedlich‘}, wenn es zusammen mit unbestimmten Substantiven und dem Suffix \N{-o} verwendet wird.
+\subsection{Indefinit} Das Adjektiv \N{lahe} \E{andere/r/s, weitere/r/s} kann zusammen mit Substantiven verwendet werden, die mit dem Indefinitsuffix \N{-o} markiert sind:
 
 \begin{interlin}
-	\glll Lu law \uwave{'uo} \uwave{alahe}, ma eylan. \\
-	lu law 'u-o a-lahe, ma eylan \\
-	sein gewiss Sache-irgendein \I{lig}-anderes, \I{voc} Freunde \\
-	\trans{\uwave{Etwas anderes} ist gewiss, meine Freunde.} \Ipawl{}
+	\glll \Npawl{}Lu law \uwave{'uo} \uwave{alahe}, ma eylan. \\
+	lu law 'u-o a-lahe ma ay-'eylan \\
+	sein gewiss Sache-\I{ind} \I{lig}-andere/r/s \I{voc} \I{pl}-Freund \\
+	\trans{\uwave{Etwas anderes} ist gewiss, meine Freunde.}
 \end{interlin}
 \index{Indefinites Substantiv}\index{lahe@\textbf{lahe}!mit indefinitem Substantiv}
 
-\subsection{Indefinite der freien Wahl} Na'vi verwendet \N{ketsran} \E{egal (was), was (auch) immer} mit generischen Substantiven, um freie Wählbarkeit auszudrücken. Es kann adjektivisch gebraucht werden, indem ein attributives \N{-a-} angehängt wird (Beispiele \ref{ketsran:ex01} und \ref{ketsran:ex02}), oder es kann eine Konjunktion sein (Beispiele \ref{ketsran:ex03} und \ref{ketsran:ex04}). Ein Satz mit \N{ketsran} steht häufig, wenn auch nicht immer, im Subjunktiv:
+\subsection{Indefinite der freien Wahl} Na'vi verwendet \N{ketsran} \E{egal (was), was (auch) immer} mit generischen Substantiven, um freie Wählbarkeit auszudrücken. Es kann adjektivisch gebraucht werden, indem ein attributives \N{-a-} angehängt wird (Beispiele (\ref{ketsran:ex01}) und (\ref{ketsran:ex02})), oder es kann eine Konjunktion sein (Beispiele (\ref{ketsran:ex03}) und (\ref{ketsran:ex04})). Ein Satz mit \N{ketsran} steht häufig, wenn auch nicht immer (siehe Beispiel (\ref{ketsran:ex01})), im Subjunktiv:
 \index{Indefinite!freie Wahl}\index{ketsran@\textbf{ketsran}}
 
 \begin{interlin} \label{ketsran:ex01}
-	\glll 'U aketsran tsun tivam. \\
+	\glll \Npawl{}'U aketsran tsun tivam. \\
 	'u a-ketsran tsun t\INF{iv}am \\
-	Sache \I{lig}-egal-was kann ausreichen\INF{\I{subj}} \\
-	\trans{Irgendetwas wird in Ordnung sein.} \Ipawl{}
+	Sache \I{lig}-egal.was kann ausreichen\INF{\I{subj}} \\
+	\trans{Irgendetwas wird in Ordnung sein.}
 \end{interlin}
 
 \begin{interlin} \label{ketsran:ex02}
-	\glll Pukit aketsran ivinan. \\
+	\glll \Npawl{}Pukit aketsran ivinan. \\
 	puk-it a-ketsran \INF{iv}inan \\
-	Buch-\I{pat} \I{lig}-egal-was lesen\INF{\I{subj}} \\
-	\trans{Lies irgendein Buch.} \Ipawl{}
+	Buch-\I{pat} \I{lig}-egal.was lesen\INF{\I{subj}} \\
+	\trans{Lies irgendein Buch.}
 \end{interlin}
 
 \begin{interlin} \label{ketsran:ex03}
-	\glll Ketsran tute nivew hivum, poru plltxe san rutxe 'ivì'awn. \\
-	ketsran tute n\INF{iv}ew h\INF{iv}um, po-ru plltxe san rutxe '\INF{iv}ì'awn\\
-	egal-was Person wollen\INF{\I{subj}} verlassen\INF{\I{subj}}, \I{3sg-dat} tell \I{quot} bitte bleiben\INF{\I{subj}} \\
-	\trans{Egal wer gehen möchte, sag ihm, dass er bitte bleiben soll.} \Ipawl{}
+	\glll \Npawl{}Ketsran tute nivew hivum, poru plltxe san rutxe 'ivì'awn. \\
+	ketsran tute n\INF{iv}ew h\INF{iv}um po-ru plltxe san rutxe '\INF{iv}ì'awn\\
+	egal.was Person wollen\INF{\I{subj}} verlassen\INF{\I{subj}} \I{3sg-dat} tell \I{quot} bitte bleiben\INF{\I{subj}} \\
+	\trans{Egal wer gehen möchte, sag ihm, dass er bitte bleiben soll.}
 \end{interlin}
 
 \begin{interlin} \label{ketsran:ex04}
-	\glll Ketsran tutel 'ivem, tsafnetsngan lu ftxìvä'. \\
-	ketsran tute-l '\INF{iv}em, tsa-fne-tsngan lu ftxìvä' \\
-	egal-was Person-\I{agt} kochen\INF{\I{subj}}, diese-Art-Fleisch sein eklig \\
-	\trans{Diese Art von Fleisch ist eklig, egal wer es kocht.} \Ipawl{}
+	\glll \Npawl{}Ketsran tutel 'ivem, tsafnetsngan lu ftxìvä'. \\
+	ketsran tute-l '\INF{iv}em tsa-fne-tsngan lu ftxìvä' \\
+	egal.was Person-\I{agt} kochen\INF{\I{subj}} \I{dem.dis}-Art-Fleisch sein eklig \\
+	\trans{Jene Art von Fleisch ist eklig, egal wer es kocht.}
 \end{interlin}
 \noindent\NTeri{3/31/2013}{https://naviteri.org/2013/03/whoever-whatever-whenever/}
 
-\subsection{Apposition} Substantive in einer Apposition\footnote{Ein Substantiv steht in einer Apposition, wenn es unmittelbar neben einem anderen Substantiv oder Pronomen steht und dieses näher beschreibt oder definiert (\href{https://de.wikipedia.org/wiki/Apposition}{vgl. Wikipedia: Apposition}). Wenn die Nominalphrase in der Apposition aus mehr als nur einem Substantiv besteht, wird sie im Deutschen durch Kommata abgetrennt.} zu anderen Substantiven stehen im Absolutiv, \Npawl{aylì'ufa \uwave{awngeyä 'eylanä a'ewan Markusì}} \E{in den Worten \uwave{unseres jungen Freundes Markus}}. Dafür wird auch die Konjunktion \N{alu} verwendet (\horenref{syn:conj:alu}).\footnote{Die reine Apposition ist frühes Na’vi. Die Konjunktion \N{alu} zu verwenden dürfte sich im Hinblick auf den künftigen Gebrauch als sinnvoller erweisen.} \index{Apposition}
+\subsection{Apposition} Substantive in einer Apposition\footnote{Ein Substantiv steht in einer Apposition, wenn es unmittelbar neben einem anderen Substantiv oder Pronomen steht und dieses näher beschreibt oder definiert (\href{https://de.wikipedia.org/wiki/Apposition}{vgl. Wikipedia: Apposition}). Wenn die Nominalphrase in der Apposition aus mehr als nur einem Substantiv besteht, wird sie im Deutschen durch Kommata abgetrennt.} zu anderen Substantiven stehen im Absolutiv: 
 
-\subsubsection{Titel} Titel fungieren als Substantivmodifikatoren und werden daher nicht dekliniert, wenn sie mit Eigennamen verwendet werden. Der Dativ von \N{Karyu Pawl} „Lehrer Paul“ ist \N{Karyu Pawlur}. \index{Kasus!mit Titeln}
+\begin{interlin} \label{apposition:ex01}
+	\glll \Npawl{}aylì'ufa \uwave{awngeyä} \uwave{'eylanä} \uwave{a'ewan} \uwave{Markusì} \\
+	ay-lì'u-fa ay-oe-nga-yä 'eylan-ä a-'ewan Markusì \\
+	\I{pl}-Wort-mit \I{pl-1sg-2sg-gen} Freund-\I{gen} \I{lig}-jung Markus \\
+	\trans{mit den Worten \uwave{unseres jungen Freundes Markus}}
+\end{interlin}
+
+\noindent Für Sätze wie in Beispiel (\ref{apposition:ex01}) wird auch die Konjunktion \N{alu} verwendet (\horenref{syn:conj:alu}).\footnote{Die reine Apposition ist frühes Na’vi. Die Konjunktion \N{alu} zu verwenden dürfte sich im Hinblick auf den künftigen Gebrauch als sinnvoller erweisen.} \index{Apposition}
+
+\subsubsection{Titel} Titel fungieren als Substantivmodifikatoren und werden daher nicht dekliniert, wenn sie mit Eigennamen verwendet werden. Der Dativ von \N{Karyu Pawl} \E{Lehrer Paul} ist \N{Karyu Pawlur}. \index{Kasus!mit Titeln}
 % https://forum.learnnavi.org/language-updates/definitive-answers-on-compound-nouns/
 % Followup and details: https://forum.learnnavi.org/language-updates/compound-nounsfinal-decision!/
 
-\subsection{Adjektivische Attribution} Attributive Adjektive werden dem Substantiv, das sie beschreiben, mit dem Affix \N{-a-} zugeordnet (siehe \horenref{morph:adj-attr}), \Npawl{sìlpey oe, layu oeru ye'rìn \uwave{sìltsana fmawn}} \E{Ich hoffe, ich werde bald gute Nachrichten haben}, \Npawl{lora aylì'u, lora aysäfpìl} \E{Schöne Worte und schöne Gedanken}. \index{Adjektiv!attributiv}\label{syn:adj:attr}
+\subsection{Adjektivische Attribution} Attributive Adjektive werden dem Substantiv, das sie beschreiben, mit dem Affix \N{-a-} zugeordnet (siehe \horenref{morph:adj-attr}):
+
+\begin{interlin}
+	\glll \Npawl{}Sìlpey oe, layu oeru ye'rìn \uwave{sìltsana} fmawn. \\
+	sìlpey oe l\INF{ay}u oe-ru ye'rìn sìltsan-a fmawn \\
+	hoffen \I{1sg} sein\INF{\I{fut}} \I{1sg-dat} bald gut-\I{lig} Nachricht \\
+	\trans{Ich hoffe, ich werde bald gute Nachrichten haben.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}\uwave{lora} aylì'u, \uwave{lora} aysäfpìl \\
+	lor-a ay-lì'u lor-a ay-sä-fpìl \\
+	schön-\I{lig} \I{pl}-Wort schön-\I{lig} \I{pl-nmlz}-Gedanke \\
+	\trans{schöne Worte und schöne Gedanken}
+\end{interlin}
+\index{Adjektiv!attributiv}\label{syn:adj:attr}
 
 \subsubsection{} Unabhängig von der Reihenfolge von Substantiv und Adjektiv werden die Kasusendungen immer an das Substantiv angehängt, niemals an das Adjektiv. Ebenso wird eine enklitische Adposition immer an das Substantiv angehängt
 (\horenref{syn:adp:position}).
 
-\subsubsection{} Wenn ein Adverb mit einem attributiven Adjektiv verwendet wird, darf es nicht zwischen dem Adjektiv und seinem Substantiv stehen, d. h. \Npawl{sìkenong ahìno nìhawng} \E{sehr detaillierte Beispiele} oder \N{nìhawng hìnoa sìkenong}, niemals etwas wie \N{*hìno nìhawnga sìkenong}.
-\index{Adjektiv!attributiv!mit Adverb}
+\subsubsection{} Wenn ein Adverb mit einem attributiven Adjektiv verwendet wird, darf es nicht zwischen dem Adjektiv und seinem Substantiv stehen, d. h. \Npawl{sìkenong ahìno nìhawng} \E{sehr detaillierte Beispiele} oder \N{nìhawng hìnoa sìkenong}, niemals etwas wie \N{*hìno nìhawnga sìkenong}.\index{Adjektiv!attributiv!mit Adverb}
 
-\subsubsection{} Wenn zwei Adjektive ein Substantiv beschreiben, tendiert Frommer dazu, sie in der Reihenfolge ,Adj. -- Subst. -- Adj.‘ anzuordnen, \Npawl{nìawnomum tolel oel ta ayhapxìtu lì'fyaolo'ä \uwave{pxaya sìpawmit atxantsan}} \E{Wie ihr wisst, habe ich \uwave{viele ausgezeichnete Fragen} von Mitgliedern der Sprachgemeinschaft erhalten}.
+\subsubsection{} Wenn zwei Adjektive ein Substantiv beschreiben, tendiert Frommer dazu, sie in der Reihenfolge ,Adj. -- Subst. -- Adj.‘ anzuordnen:
+
+\begin{interlin}
+	\glll \Npawl{}Nìawnomum tolel oel ta ayhapxìtu lì'fyaolo'ä \uwave{pxaya} \uwave{sìpawmit} \uwave{atxantsan}. \\
+	nìawnonum t\INF{ol}el oe-l ta ay-hapxìtu lì'fyaolo'-ä pxay-a ay-tì-pawm-it a-txantsan \\
+	bekanntlich erhalten\I{\INF{pfv}} \I{1sg-agt} von \I{pl}-Mitglied Sprachgemeinschaft-\I{gen} viel-\I{lig} \I{pl-nmlz}-fragen-\I{pat} \I{lig}-ausgezeichnet \\
+	\trans{Wie ihr wisst, habe ich \uwave{viele ausgezeichnete Fragen} von Mitgliedern der Sprachgemeinschaft erhalten.}
+\end{interlin}
 
 \subsubsection{} Bei mehr als zwei Adjektiven, oder wenn eine andere Reihenfolge als die oben angegebene (,Adj. -- Subst. -- Adj.‘) verwendet werden soll, können die Adjektive mit \N{lu} in einen Relativsatz gesetzt werden:
 
 \begin{interlin}
-	\glll yayo a lu lor sì hì'i \\
+	\glll \Npawl{}yayo a lu lor sì hì'i \\
 	yayo a lu lor sì hì'i \\
 	Vogel \I{rel} sein schön und klein \\
-	\trans{ein kleiner, schöner Vogel (wörtl. ein Vogel, der klein und schön ist)} \Ipawl{}
+	\trans{ein kleiner, schöner Vogel (wörtl. ein Vogel, der klein und schön ist)}
 \end{interlin}
 
 \noindent Allerdings ist \N{yayo alor sì hì'i} (ohne \N{lu}) zulässig, wenn auch nicht bevorzugt. Dies ist viel wahrscheinlicher und akzeptabler, wenn ein drittes Adjektiv im Satz vorkommt:
 
 \begin{interlin}
-	\glll mrra yayo atsawl sì layon \\
+	\glll \Npawl{}mrra yayo atsawl sì layon \\
 	mrr-a yayo a-tsawl sì layon \\
 	fünf-\I{lig} Vogel \I{lig}-groß und schwarz \\
-	\trans{fünf große, schwarze Vögel} \Ipawl{}
+	\trans{fünf große, schwarze Vögel}
 \end{interlin}
 
-\noindent Ohne \N{mrr-a} wäre \N{tsawla yayo alayon} vorzuziehen.
+\noindent Ohne \N{mrra} wäre \N{tsawla yayo alayon} vorzuziehen.
 \Ultxa{2/10/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/UltxaAyharyu\%C3\%A4\%23Multiple_Attributives}
 \NTeri{28/2/2021}{https://naviteri.org/2021/02/aysipawm-si-aysieyng-questions-and-answers/\#comment-32798}
 
-\subsubsection{} Ein einzelnes Adjektiv kann auf beiden Seiten des Substantivs wiederholt werden, um Intensität zu kennzeichnen. Das zweite Adjektiv erhält den Satzakzent, \Npawl{lu po lora tuté \uwave{alor}} \E{Sie ist eine äußerst schöne Frau}.
+\subsubsection{} Ein einzelnes Adjektiv kann auf beiden Seiten des Substantivs wiederholt werden, um Intensität zu kennzeichnen. Das zweite Adjektiv erhält den Satzakzent:
+
+\begin{interlin}
+	\glll \Npawl{}Lu po lora tuté alor. \\
+	lu po lor-a tuté a-lor \\
+	sein \I{3sg} schön-\I{lig} Frau \I{lig}-schön \\
+	\trans{Sie ist eine äußerst schöne Frau.}
+\end{interlin}
 \NTeri{2/28/2013}{https://naviteri.org/2013/02/vospxi-ayol-posti-apup-short-post-for-a-short-month/}
 
-\subsubsection{} Bei der Wiederholung eines Substantivs mit verschiedenen Adjektiven (,der große\linebreak Hund, der kleine Hund, der kläffende Hund‘, usw.) wird der Platzhalter\footnote{Frommer nennt ihn ein ,dummy noun‘, betrachtet ihn also als Substantiv; man kann ihn aber durchaus auch als eine Art Pronomen verstehen.} \N{pum} anstelle des wiederholten Substantivs verwendet, \Npawl{lam set fwa Sawtute akawng holum, \uwave{pum asìltsan} 'ì'awn} \E{Es scheint, dass jetzt, da die bösen Himmelsmenschen gegangen sind, \uwave{die guten übrig bleiben}}.\footnote{Anm. d. Ü.: Der Platzhalter lässt sich im Deutschen nicht nachbilden -- im Gegensatz zum Englischen (das über das Pronomen \E{one} verfügt) bleibt das Adjektiv im Nebensatz alleine stehen und wird nicht substantiviert.} Wenn es aber einen allgemeineren Begriff gibt, ist es eleganter, diesen zu verwenden. Auf die Frage \Npawl{pol\-pxay\-a ta\-ron\-yu kelku si tsatsraymì?} \E{Wie viele Jäger leben in diesem Dorf?} ist demnach die Antwort \N{tute amevol} \E{Sechzehn Leute} die elegantere, obwohl \N{pum amevol} akzeptabel ist.\\
-\indent Man beachte, dass \N{pum} stets mit einem Deskriptor stehen muss (d. h. mit einem Adjektiv oder Pronomen; \QUAESTIO{es ist nicht klar, ob \N{-pe+}, \N{fì-} und \N{tsa-} valide Deskriptoren für \N{pum} sind}); ein Satz wie \N{*tìng oer pumit} ist daher ungrammatisch und erfordert z. B. ein Zahlwort als Deskriptor (\Npawl{tìng oer pumit \uwave{a'aw}} \E{Gib mir eines}). Bezieht sich \N{pum} auf ein bzw. mehrere Elemente einer im Diskurs bereits etablierten Menge, kann \N{sawta} ($<$ \N{aysa'u} $+$ \N{ta}) für unbelebte und \N{fota} ($<$ \N{ayfo} $+$ \N{ta}) für belebte Mengen genutzt werden, \Npawl{lu ngaru 'eveng apukap, slä smon oer \uwave{fota} pum amrr nì'aw} \E{Du hast sechs Kinder, aber ich kenne nur fünf \uwave{davon}}.\footnote{Hier hat \N{fota} zudem die Funktion, Ambiguität zu vermeiden: Gemeint sind nicht fünf Kinder generell, sondern speziell fünf Kinder der angesprochenen Person.}
+\subsubsection{} Bei der Wiederholung eines Substantivs mit verschiedenen Adjektiven (,der große\linebreak Hund, der kleine Hund, der kläffende Hund‘, usw.) wird der Platzhalter\footnote{Frommer nennt ihn ein ,dummy noun‘, betrachtet ihn also als Substantiv; man kann ihn aber durchaus auch als eine Art Pronomen verstehen.} \N{pum} anstelle des wiederholten Substantivs verwendet:
+
+\begin{interlin}
+	\glll \Npawl{}Lam set fwa sawtute akawng holum, \uwave{pum} \uwave{asìltsan} 'ì'awn. \\
+	lam set fì-'u-a ay-tawtute a-kawng h\INF{ol}um pum a-sìltsan 'ì'awn \\
+	scheinen jetzt \I{dem.prox}-Sache-\I{rel} \I{pl}-Himmelsmensch \I{lig}-böse weggehen\I{\INF{pfv}} \I{pro} \I{lig}-gut bleiben \\
+	\trans{Es scheint jetzt, dass die bösen Himmelsmenschen fortgegangen sind, \uwave{die guten} verbleiben.}\footnote{Anm. d. Ü.: Der Platzhalter lässt sich im Deutschen nicht nachbilden -- im Gegensatz zum Englischen (das über das Pronomen \E{one} verfügt) bleibt das Adjektiv im Nebensatz alleine stehen und wird nicht substantiviert.}
+\end{interlin}
+
+\noindent Wenn es aber einen allgemeineren Begriff gibt, ist es eleganter, diesen zu verwenden. Auf die Frage: \N{Polpxaya taronyu kelku si tsatsraymì?} \E{Wie viele Jäger leben in jenem Dorf?} ist demnach die Antwort \N{tute amevol} \E{Sechzehn Leute} die elegantere, obwohl \N{pum amevol} akzeptabel ist.\\
+\indent Man beachte, dass \N{pum} stets mit einem Deskriptor stehen muss (d. h. mit einem Adjektiv oder Pronomen; \QUAESTIO{es ist nicht klar, ob \N{-pe+}, \N{fì-} und \N{tsa-} valide Deskriptoren für \N{pum} sind}); ein Satz wie \N{*tìng oer pumit} ist daher ungrammatisch und erfordert z. B. ein Zahlwort als Deskriptor:
+
+\begin{interlin}
+	\glll \Npawl{}Tìng oer \uwave{pumit} \uwave{a'aw}. \\
+	tìng oe-r pum-it a-'aw \\
+	geben \I{1sg-dat} \I{pro-pat} \I{lig}-eine/r/s \\
+	\trans{Gib mir \uwave{eines}.}
+\end{interlin}
+
+\noindent Bezieht sich \N{pum} auf ein bzw. mehrere Elemente einer im Diskurs bereits etablierten Menge, kann \N{sawta} ($<$ \N{aysa'u} $+$ \N{ta}) für unbelebte und \N{fota} ($<$ \N{ayfo} $+$ \N{ta}) für belebte Mengen genutzt werden: 
+
+\begin{interlin}
+	\glll \Npawl{}Lu ngaru 'eveng apukap, slä smon oer \uwave{fota} pum amrr nì'aw. \\
+	lu nga-ru 'eveng a-pukap slä smon oe-r ay-po-ta pum a-mrr nì-'aw \\
+	sein \I{2sg-dat} Kind \I{lig}-sechs aber kennen \I{1sg-dat} \I{pl-3sg}-davon \I{pro} \I{lig}-fünf \I{advz}-eine/r/s \\
+	\trans{Du hast sechs Kinder, aber ich kenne nur fünf \uwave{davon}.}\footnote{Hier hat \N{fota} zudem die Funktion, Ambiguität zu vermeiden: Gemeint sind nicht fünf Kinder generell, sondern speziell fünf Kinder der angesprochenen Person.}
+\end{interlin}
 \label{syn:pum:adj} \index{pum@\textbf{pum}!mit attributiven Adjektiven}\LNForum{30/5/2020}{https://forum.learnnavi.org/index.php?msg=670718}
 \NTeri{10/1/2025}{https://naviteri.org/2025/01/tsaliu-alu-pum-aysaomum-asawnung-additional-information-about-pum/}
 
@@ -154,41 +261,156 @@ Verben, die sowohl im Kausativ als auch im Reflexiv stehen, werden mit der Infix
 \index{si-Konstruktion@\textbf{si}-Konstruktion!mit attributivem Adjektiv}
 \LNForum{6/12/2013}{https://forum.learnnavi.org/index.php?msg=599196}
 
-\subsection{Prädikation} Substantivische und adjektivische Prädikative verwenden beide die Konstruktion mit dem Kopulaverb \N{lu} \E{sein}, wie in \Npawl{\uwave{reltseotu atxantsan lu} nga} \E{Du bist ein ausgezeichneter Künstler}, \Npawl{fìsyulang lu rim} \E{Diese Blume ist gelb}.
-\index{Adjektiv!Prädikation}\index{Substantiv!Prädikation}\label{syn:predicates}
+\subsection{Prädikation} Substantivische (Beispiel (\ref{predication:ex01})) und adjektivische (Beispiel (\ref{predication:ex02})) Prädikative werden beide mit dem Kopulaverb \N{lu} \E{sein} verwendet:\index{Adjektiv!Prädikation}\index{Substantiv!Prädikation}\label{syn:predicates}
 
-\subsubsection{} Andere Verben, die ein Prädikativum haben können, sind \N{slu} \E{werden} und \N{'efu} \E{fühlen}, wie etwa in \N{ngenga slìyu Na'viyä hapxì} \E{Du wirst Teil des Volkes werden}, \N{oe 'efu ohakx} \E{Ich bin (fühle mich) hungrig}.
-\index{slu@\textbf{slu}!Syntax mit Prädikativ}\index{'efu@\textbf{'efu}!Syntax mit Prädikativ}
+\begin{interlin} \label{predication:ex01}
+	\glll \Npawl{}\uwave{Reltseotu} \uwave{atxantsan} lu nga. \\
+	reltseotu a-txantsan lu nga \\
+	Künstler \I{lig}-ausgezeichnet sein \I{2sg} \\
+	\trans{Du bist \uwave{ein ausgezeichneter Künstler.}}
+\end{interlin}
 
-\subsubsection{} Wenn es bei \N{slu} \E{werden} mehrdeutig ist, welche Konstituente das Subjekt und welche das Prädikativum ist, kann das Prädikativum mit der Adposition \N{ne} versehen werden, wie in \N{taronyu slu \uwave{ne tsamsiyu}} \E{Der Jäger wird \uwave{ein Krieger}}.
+\begin{interlin} \label{predication:ex02}
+	\glll \Npawl{}Fìsyulang lu \uwave{rim}. \\
+	fì-syulang lu rim\\
+	\I{dem.prox}-Blume sein gelb\\
+	\trans{Diese Blume ist \uwave{gelb}.}
+\end{interlin}
+
+\subsubsection{} Andere Verben, die ein Prädikativum haben können, sind \N{slu} \E{werden} und \N{'efu} \E{fühlen}:\index{slu@\textbf{slu}!Syntax mit Prädikativ}\index{'efu@\textbf{'efu}!Syntax mit Prädikativ}
+
+\begin{interlin}
+	\glll Nga slìyu Na'viyä hapxì. \\
+	nga sl\INF{ìy}u Na'vi-yä hapxì \\
+	\I{2sg} werden\I{\INF{prox.fut}} Volk-\I{gen} Teil\\
+	\trans{Du wirst Teil des Volkes werden.}
+\end{interlin}
+
+\begin{interlin}
+	\glll Oe 'efu ohakx. \\
+	oe 'efu ohakx \\
+	\I{1sg} fühlen hungrig \\
+	\trans{Ich bin (,fühle mich‘) hungrig.}
+\end{interlin}
+
+\subsubsection{} Wenn bei \N{slu} \E{werden} mehrdeutig ist, welche Konstituente das Subjekt und welche das Prädikativum ist, kann das Prädikativum mit der Adposition \N{ne} versehen werden:
+
+\begin{interlin}
+	\glll Taronyu slu \uwave{ne} \uwave{tsamsiyu}. \\
+	taronyu slu ne tsamsiyu \\
+	Jäger werden zu Krieger \\
+	\trans{Der Jäger wird \uwave{ein Krieger}.}
+\end{interlin}
 \label{syn:predicate:slu-ne}\index{ne@\textbf{ne}! mit \textbf{slu}}\index{slu@\textbf{slu}!Syntax mit \textbf{ne}}\LNWiki{2/10/2010}{https://wiki.learnnavi.org/Canon/2010/UltxaAyharyuä\#Word_Order_with_Slu}
 
-\subsubsection{} \N{Sleyku}, der Kausativ von \N{slu} \E{werden}, nimmt ebenfalls ein adjektivisches Prädikativum an, \Npawl{fula tsayun oeng pivängkxo ye'rìn ulte ngari oel mokrit stayawm, \uwave{oeti nitram sleyku} nìtxan} \E{\uwave{Es macht mich sehr glücklich}, dass wir beide bald plaudern können und dass ich deine Stimme hören werde}. In gleicher Weise nimmt \N{'eykefu}, der Kausativ von \N{'efu}, ein adjektivisches Prädikativum an, \Npawl{fula horen sì aylì'fyavi amip lesar sayi mengar \uwave{oeti nitram 'eykefu} nìtxan} \E{\uwave{Es macht mich sehr glücklich}, dass die neuen Regeln und Wörter für euch beide nützlich sein werden.}
-\index{sleyku@\textbf{sleyku}!Syntax mit Prädikativ}
+\subsubsection{} Die Kausativ-Formen von \N{slu} und \N{'efu} -- \N{sleyku} (Beispiel (\ref{sleyku:ex01})) und \N{'eykefu} (Beispiel (\ref{'eykefu:ex01})) -- können ebenfalls ein adjektivisches Prädikativum annehmen:\index{sleyku@\textbf{sleyku}!Syntax mit Prädikativ}
 \index{'eykefu@\textbf{'eykefu}!Syntax mit Prädikativ}
 
-\subsection{Vergleich} Komparative und Superlative von Adjektiven (\E{groß, größer, am größten}) werden mit der Partikel \N{to} markiert, die wie eine Adposition vor dem Substantiv stehen kann, mit dem verglichen wird, oder als Suffix an dieses angehängt wird (\horenref{lands:stress:enclisis}):
+\begin{interlin} \label{sleyku:ex01}
+	\glll \Npawl{}Fula tsayun oeng pivängkxo ye'rìn ulte ngari oel mokrit stayawm, \uwave{oeti} \uwave{nitram} \uwave{sleyku} nìtxan. \\
+	fì-'u-l-a ts\INF{ay}un oe-nga p\INF{iv}ängkxo ye'rìn ulte nga-ri oe-l mokri-t st\INF{ay}awm oe-ti nitram sl\INF{eyk}u nì-txan\\
+	\I{dem.prox}-Sache-\I{agt-rel} können\I{\INF{fut}} \I{1sg-2sg} plaudern\I{\INF{subj}} bald und \I{2sg-top} \I{1sg-agt} Stimme-\I{pat} hören\I{\INF{fut}} \I{1sg-pat} glücklich werden\I{\INF{caus}} \I{advz}-viel\\
+	\trans{\uwave{Es macht mich sehr glücklich}, dass wir beide bald plaudern können und ich deine Stimme hören werde.}
+\end{interlin}
+
+\begin{interlin} \label{'eykefu:ex01}
+	\glll \Npawl{}Fula horen sì aylì'fyavi amip lesar sayi mengar, \uwave{oeti} \uwave{nitram} \uwave{'eykefu} nìtxan. \\
+	fì-'u-l-a ay-koren sì ay-lì'fyavi a-mip le-sar s\INF{ay}i me-nga-r oe-ti nitram '\INF{eyk}efu nì-txan \\
+	\I{dem.prox}-Sache-\I{agt-rel} \I{pl}-Regel und \I{pl}-Ausdruck \I{lig}-neu \I{adjz}-benutzen \I{aux\INF{fut}} \I{du-2sg-dat} \I{1sg-pat} glücklich fühlen\I{\INF{caus}} \I{advz}-viel \\
+	\trans{\uwave{Es macht mich sehr glücklich}, dass die neuen Regeln und Ausdrücke für euch beide nützlich sein werden.}
+\end{interlin}
+
+\subsection{Vergleich} Komparative und Superlative von Adjektiven (\E{groß, größer, am größten}) werden mit der Partikel \N{to} markiert, die wie eine Adposition vor dem Substantiv stehen kann, mit dem verglichen wird (wie in Beispiel (\ref{comparative:ex01})), oder (wie in Beispiel (\ref{comparative:ex02})) als Suffix an dieses angehängt wird (siehe \horenref{lands:stress:enclisis}):
 \index{to@\textbf{to}}\index{Adjektiv!Komparativ}
 \index{Vergleich!von Adjektiven}
 
-\begin{quotation}
-	\noindent\N{Oe \uwave{to nga} lu koak.} \E{Ich bin älter \uwave{als du}}.\\
-	\noindent\N{Oe \uwave{ngato} lu koak.} \E{Ich bin älter \uwave{als du}}.
-\end{quotation}
+\begin{interlin} \label{comparative:ex01}
+	\glll Oe \uwave{to} \uwave{nga} lu koak. \\
+	oe to nga lu koak \\
+	\I{1sg} \I{comp} \I{2sg} sein alt \\
+	\trans{Ich bin älter \uwave{als du}.}
+\end{interlin}
 
-\subsubsection{} Der Superlativ wird mit \N{\ACC{fra}to} \E{als alle} (wörtl. \E{im Vergleich zu allen}) gebildet, \Npawl{fìsyulang arim lu hì'i frato} \E{Diese gelbe Blume ist die kleinste (von allen)}. \index{frato@\textbf{frato}}
+\begin{interlin} \label{comparative:ex02}
+	\glll Oe \uwave{ngato} lu koak. \\
+	oe nga-to lu koak \\
+	\I{1sg} \I{2sg-comp} sein alt \\
+	\trans{Ich bin älter \uwave{als du}.}
+\end{interlin}
+
+\subsubsection{} Der Superlativ wird mit \N{\ACC{fra}to} \E{als alles} (wörtl. \E{im Vergleich zu allem}) gebildet: \index{frato@\textbf{frato}}
 \index{Adjektiv!Superlativ}
 
-\subsubsection{} Vergleiche, die auf Gemeinsamkeiten basieren (,so groß wie ein Baum‘), werden mit dem Idiom ,\N{nìftxan} -- Adj. -- \N{na} -- Substantiv oder Pronomen‘ formuliert, wie in \Npawl{oe lu nìftxan sìltsan na nga} \E{Ich bin genauso gut wie du.} Wenn der Vergleichspunkt ein Pronomen oder ein definites Substantiv ist, das bereits Teil des Diskurses ist, kann der Topik-Fall verwendet werden, \Npawl{ngari lu oe nìftxan sìltsan}. Diese Konstruktion kann auch mit Adverben verwendet werden. \label{syntax:adj-eql-comp}
-\index{Adjektiv!Gemeinsamkeit}\index{nìftxan@\textbf{nìftxan}}\index{Kasus!Topik!Vergleichspunkt}\index{na@\textbf{na}!Vergleichspunkt}\LNWiki{1/12/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/October-December\#As_ADJ.2FADV_as_N.2FPRN}
+\begin{interlin}
+	\glll \Npawl{}Fìsyulang arim lu hì'i frato. \\
+	fì-syulang a-rim lu hì'i fra-to \\
+	\I{dem.prox}-Blume \I{lig}-gelb sein klein alles-\I{comp} \\
+	\trans{Diese gelbe Blume ist die kleinste (von allen).}
+\end{interlin}
+
+\subsubsection{} Vergleiche, die auf Gemeinsamkeiten basieren (,so groß wie ein Baum‘), werden nach dem Schema ,\N{nìftxan} -- Adjektiv oder Adverb -- \N{na} oder \N{pxel} -- Substantiv oder Pronomen‘ formuliert (\N{na} und \N{pxel} sind dabei austauschbar):
+
+\begin{interlin}
+	\glll \Npawl{}Oe lu nìftxan sìltsan na nga. \\
+	oe lu nì-fì-txan sìltsan na nga \\
+	\I{1sg} sein \I{advz-dem}-viel gut wie \I{2sg} \\
+	\trans{Ich bin genauso gut wie du.}
+\end{interlin}
+
+\begin{interlin}
+	\glll Oe tul nìftxan nìwin pxel nga. \\
+	oe tul nì-fì-txan nì-win pxel nga \\
+	\I{1sg} rennen \I{advz-dem}-viel \I{advz}-schnell wie \I{2sg} \\
+	\trans{Ich renne genauso schnell wie du.}
+\end{interlin}
+
+\noindent Wenn der Vergleichspunkt ein Pronomen oder ein definites Substantiv ist, das bereits Teil des Diskurses ist, kann der Topik-Fall verwendet werden: 
+
+\begin{interlin}
+	\glll \Npawl{}Ngari lu oe nìftxan sìltsan. \\
+	nga-ri lu oe nì-fì-txan sìltsan \\
+	\I{2sg-top} sein \I{1sg} \I{advz-dem}-viel gut \\
+	\trans{Ich bin genauso gut wie du.}
+\end{interlin}\label{syntax:adj-eql-comp}
+\index{Adjektiv!Gemeinsamkeit}\index{nìftxan@\textbf{nìftxan}}\index{Kasus!Topik!Vergleichspunkt}\index{na@\textbf{na}!Vergleichspunkt}\LNWiki{1/12/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/October-December\#As_ADJ.2FADV_as_N.2FPRN} \LNWiki{31/1/2013}{https://wiki.learnnavi.org/index.php/Canon/2013\#Comparisons_and_Gerund}
 %% CITE: https://wiki.learnnavi.org/index.php/Canon/2010/October-December#As_ADJ.2FADV_as_N.2FPRN
 
 
 \subsection{Direkte Anrede}
 \index{Vokativ}\index{direkte Anrede}\index{ma@\textbf{ma}}
-Spricht man eine Person direkt an, so wird die Vokativpartikel \N{ma} unmittelbar dem entsprechenden Substantiv, Personennamen oder der Nominalphrase vorangestellt, \Npawl{oel ayngati kameie, ma oeyä eylan} \E{Ich sehe euch, meine Freunde}, \Nfilm{ma Tsu'tey, kempe si nga?} \E{Tsu'tey, was tust du?}.
+Spricht man eine Person direkt an, so wird die Vokativpartikel \N{ma} unmittelbar dem entsprechenden Substantiv, Personennamen oder der Nominalphrase vorangestellt: 
 
-\subsubsection{} Bei Entscheidungsfragen folgt der Vokativ auf das finale \N{srak}, wie in \N{ngaru lu fpom srak, ma Txewì?} \E{Geht es dir gut, Txewì?}. Und obwohl der Vokativ meist am Anfang oder Ende eines Satzes steht, kann er auch innerhalb eines Satzes vorkommen, \N{nga, ma Neytiri, plltxe nìltsan} \E{Du, Neytiri, sprichst gut}.
+\begin{interlin}
+	\glll \Npawl{}Oel ayngati kameie, ma oeyä eylan. \\
+	oe-l ay-nga-ti kam\INF{ei}e ma oe-yä ay-'eylan \\
+	\I{1sg-agt} \I{pl-2sg-pat} sehen\I{\INF{pos.aff}} \I{voc} \I{1sg-gen} \I{pl}-Freund \\
+	\trans{Ich sehe euch, meine Freunde.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Nfilm{}Ma Tsu'tey, kempe si nga? \\
+	ma Tsu'tey kem-pe si nga \\
+	\I{voc} Tsu'tey Handlung-\I{q} \I{aux} \I{2sg} \\
+	\trans{Tsu'tey, was tust du?}
+\end{interlin}
+
+\subsubsection{} Bei Entscheidungsfragen folgt der Vokativ auf das finale \N{srak}: 
+
+\begin{interlin}
+	\glll Ngaru lu fpom srak, ma Txewì? \\
+	nga-ru lu fpom srak ma Txewì \\
+	\I{2sg-dat} sein Wohlbefinden \I{pq} \I{voc} Txewì \\
+	\trans{Geht es dir gut, Txewì?}
+\end{interlin}
+
+\noindent Und obwohl der Vokativ meist am Anfang oder Ende eines Satzes steht, kann er auch innerhalb eines Satzes vorkommen:
+
+\begin{interlin}
+	\glll Nga, ma Neytiri, plltxe nìltsan. \\
+	nga ma Neytiri plltxe nì-sìltsan \\
+	\I{2sg} \I{voc} Neytiri sprechen \I{advz}-gut \\
+	\trans{Du, Neytiri, sprichst gut.}
+\end{interlin}
 \LNWiki{26/2/2018}{https://wiki.learnnavi.org/Canon/2018}
 
 \subsubsection{} Wenn mehrere Personen angesprochen werden, wird \N{ma} nicht wiederholt, \N{ma smukan sì smuke} \E{Brüder und Schwestern}.
@@ -199,8 +421,14 @@ Spricht man eine Person direkt an, so wird die Vokativpartikel \N{ma} unmittelba
 Der Vokativ ist obligatorisch, wenn man mit Menschen (und Eywa) spricht, aber optional, wenn man zu Tieren spricht.
 \LNForum{6/4/2010}{https://forum.learnnavi.org/index.php?msg=131570}
 
-\subsubsection{} Kollektiva können das Suffix \N{-ya} annehmen, wie in \Nfilm{mawey, Na'viya, mawey} \E{Ruhig, Leute, ruhig}.
-\index{-ya@\textbf{-ya}!Vokativ}
+\subsubsection{} Kollektiva können das Suffix \N{-ya} annehmen:\index{-ya@\textbf{-ya}!Vokativ}
+
+\begin{interlin}
+	\glll \Nfilm{}Mawey, Na'viya, mawey. \\
+	mawey Na'vi-ya mawey \\
+	ruhig Volk-\I{voc} ruhig \\
+	\trans{Ruhig, Leute, ruhig.}
+\end{interlin}
 
 \section{Pronomen}
 
@@ -210,48 +438,114 @@ Der Vokativ ist obligatorisch, wenn man mit Menschen (und Eywa) spricht, aber op
 
 \subsection{Numerus} Die Formen des Interrogativpronomens \N{tupe} verhalten sich abweichend von den in \horenref{syn:noun:concord} besprochenen Regeln zur Numeruskongruenz. \label{syn:pron:q-number} Hier kann das Pronomen eine Numerusmarkierung erhalten, auch wenn das Substantiv ebenfalls markiert wurde. Man vergleiche die Antworten auf diese Fragen:
 
-\begin{quotation}
-	\noindent\Npawl{Tsaysamsiyu lu \uwave{tupe}?} \E{Wer sind jene Krieger?} \\
-	\noindent\N{(Fo) lu 'eylan Tsu’teyä.} \E{Sie sind Tsu'teys Freunde.} \\
-	\noindent\N{Tsaysamsiyu lu \uwave{supe}?} \E{Wer sind jene Krieger?} \\
-	\noindent\N{(Fo) lu Kamun, Ralu, Ìstaw sì Ateyo.} \E{Sie sind Kamun, Ralu, Ìstaw und Ateyo.}
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}Tsaysamsiyu lu \uwave{tupe}? \\
+	tsa-ay-tsamsiyu lu tute-pe \\
+	\I{dem.dis-pl}-Krieger sein Person-\I{q} \\
+	\trans{Wer sind jene Krieger?}
+\end{interlin}
 
-\noindent Die Pluralformen fragen nach der Identität der einzelnen Personen, während der Singular nach einem Merkmal der gesamten Gruppe fragt.
-% https://naviteri.org/2011/07/number-in-na’vi/
-
-\subsection{Ähnlichkeit} Pronomen können das adverbiale Präfix \N{nì-} annehmen, wodurch Formen wie \N{nìnga} \E{wie du} entstehen. Diese Formen werden verwendet, um eine spezifische Art des Handelns zu bezeichnen, \Npawl{plltxe po nìayoeng} \E{Sie spricht wie wir}. Um zu beschreiben, wie jemand wahrgenommen wird, werden die Adpositionen \N{na} oder \N{pxel} bevorzugt.
-\LNForum{16/8/2016}{https://forum.learnnavi.org/index.php?msg=646341/}
-
-\subsection{Fko} Das Indefinitpronomen \N{fko} entspricht im Grunde dem deutschen ,man‘, wie in \E{Man sagt solche Dinge nicht}: \Npawl{Tsat ke tsun fko yivom} \E{Das kann man nicht essen}, \Npawl{tsun fko sivar hänit fte payoangit stivä'nì} \E{Man kann ein Netz benutzen, um einen Fisch zu fangen}.
-\index{fko@\textbf{fko}}
-
-\subsubsection{} \N{Fko} wird auch dort verwendet, wo das Deutsche bei allgemeinen Aussagen ein ,sie‘ (bzw. alternativ ein ,man‘) verwenden würde, wie in \Npawl{\uwave{plltxe fko} san ngaru lu mowan Txilte ulte poru nga} \E{\uwave{Sie sagen / man sagt}, dass du Txilte magst und umgekehrt}.\footnote{Frommers Übersetzung lautet: \E{Ich höre, du magst Txilte und umgekehrt}.}
-
-\subsubsection{} \N{Fko} kann mit dem Passiv übersetzt werden, wenn der Handelnde\footnote{Der Handelnde bzw. das Agens eines Verbs im Passiv ist die Person oder Sache, die in deutschen Passivkonstruktionen meist nach der Präposition ,von‘ steht, wie in ,Ich wurde \uwave{vom Auto} angefahren‘.} belebt ist, wie in der Redewendung \N{oeru syaw fko Wìlyìm} \E{Mein Name ist William / ich werde William genannt}, \Npawl{tsalì'uri fko pamrel si fyape?} \E{Wie wird dieses Wort geschrieben / Wie schreibt man dieses Wort?}
-\label{syn:prn:fko}
-\index{Passiv!mit \textbf{fko}}\index{fko@\textbf{fko}!für deutsches Passiv}
+\noindent Antwort: \Npawl{(Fo) lu 'eylan Tsu’teyä.} \E{Sie sind Tsu'teys Freunde.}
 
 \begin{interlin}
+	\glll \Npawl{}Tsaysamsiyu lu \uwave{supe}? \\
+	tsa-ay-tsamsiyu lu ay-tute-pe \\
+	\I{dem.dis-pl}-Krieger sein \I{pl}-Person-\I{q} \\
+	\trans{Wer sind jene Krieger?}
+\end{interlin}
+
+\noindent Antwort: \Npawl{(Fo) lu Kamun, Ralu, Ìstaw sì Ateyo.} \E{Sie sind Kamun, Ralu, Ìstaw und Ateyo.} \\
+
+\noindent Die Pluralformen fragen nach der Identität der einzelnen Personen, während der Singular nach einem Merkmal der gesamten Gruppe (hier: Freunde von Tsu'tey) fragt.
+% https://naviteri.org/2011/07/number-in-na’vi/
+
+\subsection{Ähnlichkeit} Pronomen können das adverbiale Präfix \N{nì-} annehmen, wodurch Formen wie \N{nìnga} \E{wie du} entstehen. Diese Formen werden verwendet, um eine spezifische Art des Handelns zu bezeichnen: 
+
+\begin{interlin}
+	\glll \Npawl{}Plltxe po nìayoeng. \\
+	plltxe po nì-ay-oe-nga \\
+	sprechen \I{3sg} \I{advz-pl-1sg-2sg} \\
+	\trans{Sie spricht wie wir.}
+\end{interlin}
+
+\noindent Um zu beschreiben, wie jemand wahrgenommen wird, sowie in Vergleichen mit \N{nìftxan} (siehe \horenref{syntax:adj-eql-comp}) werden die Adpositionen \N{na} oder \N{pxel} bevorzugt.
+\LNForum{16/8/2016}{https://forum.learnnavi.org/index.php?msg=646341/}
+
+\subsection{Fko} Das Indefinitpronomen \N{fko} entspricht im Grunde dem deutschen ,man‘:\index{fko@\textbf{fko}}
+
+\begin{interlin}
+	\glll \Npawl{}Tsat ke tsun fko yivom. \\
+	tsa-'u-t ke tsun fko y\INF{iv}om \\
+	\I{dem.dis}-Sache-\I{pat} \I{neg} können man essen\I{\INF{subj}} \\
+	\trans{Das kann man nicht essen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Tsun fko sivar hänit fte payoangit stivä'nì. \\
+	tsun fko s\INF{iv}ar hän-it fte payoang-it st\INF{iv}ä'nì \\
+	können man benutzen\I{\INF{subj}} Netz-\I{pat} um.zu Fisch-\I{pat} fangen\I{\INF{subj}} \\
+	\trans{Man kann ein Netz benutzen, um einen Fisch zu fangen.}
+\end{interlin}
+
+\subsubsection{} \N{Fko} wird auch dort verwendet, wo das Deutsche bei allgemeinen Aussagen ein ,sie‘ (bzw. alternativ ein ,man‘) verwenden würde: 
+
+\begin{interlin}
+	\glll \Npawl{}\uwave{Plltxe} \uwave{fko} san ngaru lu mowan Txilte ulte poru nga. \\
+	plltxe fko san nga-ru lu mowan Txilte ulte po-ru nga \\
+	sagen man \I{quot} \I{2sg-dat} sein ansprechend Txilte und \I{3sg-dat} \I{2sg} \\
+	\trans{\uwave{Sie sagen / man sagt}, dass du Txilte magst und umgekehrt.}\footnote{Frommers Übersetzung lautet: \E{Ich höre, du magst Txilte und umgekehrt}.}
+\end{interlin}
+
+\subsubsection{} \N{Fko} kann mit dem Passiv übersetzt werden, wenn der Handelnde\footnote{Der Handelnde bzw. das Agens eines Verbs im Passiv ist die Person oder Sache, die in deutschen Passivkonstruktionen meist nach der Präposition ,von‘ steht, wie in ,Ich wurde \uwave{vom Auto} angefahren‘.} belebt ist: \index{Passiv!mit \textbf{fko}}\index{fko@\textbf{fko}!für deutsches Passiv}\label{syn:prn:fko}
+
+\begin{interlin}
+	\glll Oeru syaw fko Wìlyìm. \\
+	oe-ru syaw fko Wìlyìm \\
+	\I{1sg-dat} nennen man Wìlyìm \\
+	\trans{Ich werde William genannt. / Man nennt mich William.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Tsalì'uri fko pamrel si fyape? \\
+	tsa-lì'u-ri fko pamrel si fya'o-pe \\
+	\I{dem.dis}-Wort-\I{top} man Schrift \I{aux} Art.und.Weise-\I{q} \\
+	\trans{Wie wird jenes Wort geschrieben? / Wie schreibt man jenes Wort?}
+	\end{interlin}
+
+\begin{interlin} \label{fko-passive:ex03}
 	\glll Fra'ut fkol skera'a. \\
-	fra'u-t fko-l sk\INF{er}a'a \\
-	alles-\I{pat} „man“-\I{agt} zerstören\INF{\I{ipfv}} \\
+	fra-'u-t fko-l sk\INF{er}a'a \\
+	alles-Sache-\I{pat} man-\I{agt} zerstören\INF{\I{ipfv}} \\
 	\trans{Alles wird zerstört.}
 \end{interlin}
 
-\subsection{Sno} \index{sno@\textbf{sno}}
-Das Reflexivpronomen \N{sno} bezieht sich auf das Subjekt oder den Handelnden des Satzes, in dem es steht. Im Genitiv (\N{sneyä}) kann es mit \E{sein/ihr/deren eigene/r/s} übersetzt werden. Es wird verwendet, um die Doppeldeutigkeit von Sätzen wie ,er hat sein Essen zubereitet‘ zu klären -- hier kann es sonst unklar sein, ob sich ,sein‘ auf die Person bezieht, die das Essen zubereitet, oder auf eine weitere Person:
+\noindent Die passivische Lesart in Beispiel (\ref{fko-passive:ex03}) kommt neben der Verwendung von \N{fko} auch durch die Wortfolge \I{osv} zustande (siehe \horenref{osv-passive}).
 
-\begin{quotation}
-	\noindent\N{Pol 'olem peyä wutsot.} \E{Er hat sein (jemandes anderen) Essen zubereitet.}\\
-	\noindent\N{Pol 'olem sneyä wutsot.} \E{Er hat sein (eigenes) Essen zubereitet.}
-\end{quotation}
+\subsection{Sno} \index{sno@\textbf{sno}}
+Das Reflexivpronomen \N{sno} bezieht sich auf das Subjekt oder den Handelnden des Satzes, in dem es steht. Im Genitiv (\N{sneyä}) kann es mit \E{sein/ihr/deren (eigene/r/s)} übersetzt werden. Es wird verwendet, um die Doppeldeutigkeit von Sätzen wie ,er hat sein Essen zubereitet‘ zu klären -- hier kann es sonst unklar sein, ob sich ,sein‘ auf die Person bezieht, die das Essen zubereitet, oder auf eine weitere Person:
+
+\begin{interlin}
+	\glll Pol 'olem peyä wutsot. \\
+	po-l '\INF{ol}em po-yä wutso-t \\
+	\I{3sg-agt} kochen\I{\INF{pfv}} \I{3sg-gen} Essen-\I{pat} \\
+	\trans{Er hat sein (jemandes anderen) Essen gekocht.}
+\end{interlin}
+
+\begin{interlin}
+	\glll Pol 'olem sneyä wutsot. \\
+	po-l '\INF{ol}em sno-yä wutso-t \\
+	\I{3sg-agt} kochen\I{\INF{pfv}} \I{3refl-gen} Essen-\I{pat} \\
+	\trans{Er hat sein (eigenes) Essen gekocht.}
+\end{interlin}
 
 \noindent \N{Sno} kann sich auf ein Topik beziehen, das als Subjekt fungiert:
 
-\begin{quotation}
-	\noindent\N{Skxawngìri zìmup ulte sneyä tsko kxakx.} \E{Der Idiot fiel und zerbrach seinen Bogen.}
-\end{quotation}
+\begin{interlin}
+	\glll Skxawngìri zìmup ulte sneyä tsko kxakx. \\
+	skxawng-ìri z\INF{ìm}up ulte sno-yä tsko kxakx \\
+	Dummkopf-\I{top} fallen\I{\INF{prox.pst}} und \I{refl-gen} Bogen zerbrechen \\
+	\trans{Der Dummkopf fiel und zerbrach seinen Bogen.}
+\end{interlin}
 
 %\noindent If the topical is not the subject of the clause, \N{sno}
 %will refer instead to the subject:
@@ -264,74 +558,230 @@ Das Reflexivpronomen \N{sno} bezieht sich auf das Subjekt oder den Handelnden de
 
 \QUAESTIO{Es ist nach wie vor unklar, wie man mit \N{sneyä} usw. umgeht, wenn sowohl ein Topik als auch ein Subjekt im Spiel sind, und ob sich \N{sneyä} auf Dinge in einem Nebensatz beziehen kann, wie in \E{Er denkt, dass \uwave{sein} Vater ...}}
 
-Man beachte, dass das Reflexivpronomen dem Substantiv, auf das es sich bezieht, zuvorkommen kann, wie in \Npawl{sìpawmìri \uwave{sneyä aynumeyuä} karyu 'eyng} \E{Der Lehrer antwortet auf die Fragen seiner Schüler}. Hier steht \N{sneyä} vor \N{aynumeyu}.
+Man beachte, dass das Reflexivpronomen vor dem Substantiv stehen kann, auf das es sich bezieht:
+
+\begin{interlin}
+	\glll Sìpawmìri \uwave{sneyä} \uwave{aynumeyuä} karyu 'eyng. \\
+	ay-tì-pawm-ìri sno-yä ay-numeyu-ä karyu 'eyng \\
+	\I{pl-nmlz}-fragen-\I{top} \I{refl-gen} \I{pl}-Schüler-\I{gen} Lehrer antworten \\
+	\trans{Der Lehrer antwortet auf die Fragen seiner Schüler.}
+\end{interlin}
 % https://naviteri.org/2020/05/tipusawm-tiuseyng-si-okvur-a-eltur-titxen-si-asking-answering-and-an-interesting-story/
 
-\N{Sno} bezieht sich ausschließlich auf die dritte Person.
+\noindent \N{Sno} bezieht sich ausschließlich auf die dritte Person.
 \LNWiki{23/1/2018}{https://wiki.learnnavi.org/Canon/2018}
 
-\subsection{Lahe} Das Adjektiv \N{lahe} \E{andere/r/s, weitere/r/s} kann auch als Pronomen verwendet werden, \Nfilm{fìpoti oel tspìyang, fte tìkenong liyevu \uwave{aylaru}} \E{Ich werde ihn als Lektion für die \uwave{Anderen} töten} (siehe \horenref{morph:lahe:short} für die Formen).
-\index{lahe@\textbf{lahe}!als Pronomen}
+\subsection{Lahe} Das Adjektiv \N{lahe} \E{andere/r/s, weitere/r/s} kann auch als Pronomen verwendet werden (siehe \horenref{morph:lahe:short} für die Formen):\index{lahe@\textbf{lahe}!als Pronomen}
+
+\begin{interlin}
+	\glll \Nfilm{}Fìpoti oel tspìyang, fte tìkenong liyevu \uwave{aylaru}. \\
+	fì-po-ti oe-l tsp\INF{ìy}ang fte tì-kenong l\INF{iyev}u ay-lahe-ru \\
+	\I{dem.prox-3sg-pat} \I{1sg-agt} töten\I{\INF{prox.fut}} damit \I{nmlz}-erläutern sein\I{\INF{subj.fut}} \I{pl}-andere/r/s-\I{dat} \\
+	\trans{Ich werde ihn als Lektion für die \uwave{Anderen} töten.}
+\end{interlin}
 
 \subsection{Kontrastierende Demonstrativa}\index{Demonstrativum!kontrastierend}
 Um kontrastierende Elemente zu fokussieren, werden Formen der Präfixe \N{fì-} und \N{tsa-} mit Formen der unabhängigen Demonstrativa \N{fì'u} und \N{tsa'u} verbunden, die mit \N{alu} verwendet werden:
 \index{alu@\textbf{alu}!mit kontrastierenden Demonstrativa}
 
-\begin{quotation}
-	\noindent\Npawl{Fìfkxen alu FÌ'u lu ftxìlor; tsafkxen\footnote{\normalfont Alternativ \N{pum}.} alu TSA'u ngati tspang.}\\
-	\indent\E{DIESES Gemüse ist lecker; JENES bringt dich um.}\\	
-	\noindent\Npawl{Fìkaryu alu fìpo lu tsulfätu; tsakaryu alu tsapo lu skxawng.}\\
-	\indent\E{Dieser Lehrer ist ein Meister; jener ist ein Dummkopf.}
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}Fìfkxen alu fì'u lu ftxìlor; tsafkxen alu tsa'u ngati tspang. \\
+	fì-fkxen alu fì-'u lu ftxìlor tsa-fkxen alu tsa-'u nga-ti tspang \\
+	\I{dem.prox}-Gemüse das.heißt \I{dem.prox}-Sache sein lecker \I{dem.dis}-Gemüse das.heißt \I{dem.dis}-Sache \I{2sg-pat} töten \\
+	\trans{Dieses Gemüse ist lecker; jenes bringt dich um.}
+\end{interlin}
 
-\noindent Zusätzlich wird der Kontrast in dieser Konstruktion durch eine Betonung der unabhängigen Formen \N{\underline{fì}'u} und \N{\underline{tsa}'u} ausgedrückt (im ersten Beispiel durch Großschreibung markiert).
+\begin{interlin}
+	\glll \Npawl{}Fìkaryu alu fìpo lu tsulfätu; tsakaryu alu tsapo lu skxawng. \\
+	fì-karyu alu fì-po lu tsulfätu tsa-karyu alu tsa-po lu skxawng \\
+	\I{dem.prox}-Lehrer das.heißt \I{dem.prox-3sg} sein Experte \I{dem.dis}-Lehrer das.heißt \I{dem.dis-3sg} sein Dummkopf \\
+	\trans{Dieser Lehrer ist ein Experte, jener ist ein Dummkopf.}
+\end{interlin}
+
+\noindent Zusätzlich wird der Kontrast in dieser Konstruktion durch eine Betonung der unabhängigen Formen \N{\underline{fì}'u} und \N{\underline{tsa}'u} ausgedrückt.
 \NTeri{31/12/2011}{https://naviteri.org/2011/12/one-more-for-2011/}
 
 \section{Verwendung der Kasus}
 \label{syn:cases}
 \subsection{Absolutiv} Der unmarkierte Kasus\footnote{Anm. d. Ü.: Frommer bezeichnet diesen Fall als ,Subjective‘; die deutsche linguistische Terminologie, der die vorliegende Übersetzung folgt, verwendet den Begriff ,Absolutiv‘ (vgl. die Anmerkung zu \horenref{morph:decl}).} wird für das Subjekt intransitiver Sätze, das Prädikativ in Prädikatskonstruktionen (\horenref{syn:predicates}) sowie mit Adpositionen verwendet. \index{Kasus!Absolutiv}\index{Subjekt}
 
-\subsubsection{} Bei Verben der Bewegung kann, wenn das Ziel unmittelbar nach dem Verb steht, die Adposition \N{ne} optional weggelassen werden, sodass ein unmarkiertes Substantiv übrig bleibt, \Npawl{za'u \uwave{fìtseng}, ma 'itetsyìp} \E{Komm \uwave{hierher}, kleine Tochter}. \label{syn:subjective:ne}
-\index{ne@\textbf{ne}!Entfall bei Verben der Bewegung}
+\subsubsection{} Bei Verben der Bewegung kann, wenn das Ziel unmittelbar nach dem Verb steht, die Adposition \N{ne} optional weggelassen werden, sodass ein unmarkiertes Substantiv übrig bleibt:\label{syn:subjective:ne}\index{ne@\textbf{ne}!Entfall bei Verben der Bewegung}
 
-\subsubsection{} Der Absolutiv wird auch in Ausrufen verwendet, wenn ein Substantiv oder eine Nominalphrase für sich selbst als Äußerung verwendet wird, \Npawl{lora aylì'u, lora aysäfpìl} \E{Schöne Worte und schöne Gedanken}, \Npawl{aylì'u apawnlltxe nìltsan} \E{Gut gesprochene Worte}.
-\index{Kasus!Absolutiv!in Ausrufen}
+\begin{interlin}
+	\glll \Npawl{}Za'u \uwave{fìtseng}, ma 'itetsyìp. \\
+	za'u fì-tseng ma 'ite-tsyìp \\
+	kommen \I{dem.prox}-Ort \I{voc} Tochter-\I{dim} \\
+	\trans{Komm hierher, kleine Tochter.}
+\end{interlin}
 
-\subsubsection{} Ein Zeitwort mit dem Indefinit \N{-o} wird im Absolutiv verwendet, um eine Zeitspanne anzugeben, \Nfilm{\uwave{zìsìto amrr} ftolia ohe} \E{Ich studierte \uwave{fünf Jahre lang}}, \Npawl{herwì zereiup \uwave{fìtrro nìwotx}} \E{Es hat \uwave{den ganzen Tag} geschneit}.
-\index{-o@\textbf{-o}!für Zeitspannen}
+\subsubsection{} Der Absolutiv wird auch in Ausrufen verwendet, wenn ein Substantiv oder eine Nominalphrase für sich selbst als Äußerung verwendet wird:\index{Kasus!Absolutiv!in Ausrufen}
+
+\begin{interlin}
+	\glll \Npawl{}lora aylì'u, lora aysäfpìl \\
+	lor-a ay-lì'u lor-a ay-sä-fpìl \\
+	schön-\I{lig} \I{pl}-Wort schön-\I{lig} \I{pl-nmlz}-Gedanke \\
+	\trans{schöne Worte und schöne Gedanken}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}aylì'u apawnlltxe nìltsan \\
+	ay-lì'u a-p\INF{awn}lltxe nì-sìltsan \\
+	\I{pl}-Wort \I{lig}-sprechen\I{\INF{pass.pcpl}} \I{advz}-gut \\
+	\trans{gut gesprochene Worte}
+\end{interlin}
+
+\subsubsection{} Ein Zeitwort mit dem Indefinit \N{-o} wird im Absolutiv verwendet, um eine Zeitspanne anzugeben:\index{-o@\textbf{-o}!für Zeitspannen}
+
+\begin{interlin}
+	\glll \Nfilm{}\uwave{Zìsìto} \uwave{amrr} ftolia ohe. \\
+	zìsìt-o a-mrr ft\INF{ol}ia ohe \\
+	Jahr-\I{ind} \I{lig}-fünf studieren\I{\INF{pfv}} \I{1sg.cerem} \\
+	\trans{Ich studierte \uwave{fünf Jahre lang}.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Herwì zereiup fìtrro nìwotx! \\
+	herwì z\INF{er}\INF{ei}up fì-trr-o nì-wotx \\
+	Schnee fallen\I{\INF{ipfv}\INF{pos.aff}} \I{dem.prox}-Tag-\I{ind} \I{advz}-Gänze \\
+	\trans{Es hat \uwave{den ganzen Tag} geschneit!}
+\end{interlin}
 \LNWiki{1/12/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/October-December\#Duration_and_Loan_Word.2C_.22Jesus.22}
 
-\subsection{Agens} Der Agens-Fall wird für das Subjekt transitiver Sätze verwendet, \N{\uwave{oel} ngati kameie} \E{Ich sehe dich}.
-\index{Kasus!Agens}\index{Subjekt}
+\subsection{Agens} Der Agens-Fall wird für das Subjekt transitiver Sätze verwendet:\index{Kasus!Agens}\index{Subjekt}
 
-\subsection{Patiens} Der Patiens-Fall wird für das direkte Objekt transitiver Sätze verwendet, \Npawl{\uwave{tì'eyngit} oel tolel a krr} \textit{wenn ich eine Antwort erhalte}.
-\index{Kasus!Patiens}\index{direktes Objekt}
+\begin{interlin}
+	\glll \uwave{Oel} ngati kameie. \\
+	oe-l nga-ti kam\INF{ei}e \\
+	\I{1sg-agt} \I{2sg-pat} sehen\I{\INF{pos.aff}} \\
+	\trans{Ich sehe dich.}
+\end{interlin}
 
-\subsection{Dativ} Der Dativ wird für das indirekte Objekt ditransitiver Verben verwendet, \Npawl{sìltsana fmawn a tsun oe \uwave{ayngaru} tivìng} \E{gute Nachrichten, die ich \uwave{euch} geben kann}.
-\index{Kasus!Dativ}\index{indirektes Objekt}
+\subsection{Patiens} Der Patiens-Fall wird für das direkte Objekt transitiver Sätze verwendet:\index{Kasus!Patiens}\index{direktes Objekt}
 
-\subsubsection{} Das Objekt eines \N{si}-Verbs steht im Dativ, \N{oe irayo si ngaru} \E{Ich danke dir.} \label{syn:case:dative-si}
+\begin{interlin}
+	\glll \Npawl{}\uwave{tì'eyngit} oel tolel a krr \\
+	tì-'eyng-it oe-l t\INF{ol}el a krr \\
+	\I{nmlz}-antworten-\I{pat} \I{1sg-agt} erhalten\I{\INF{pfv}} \I{rel} Zeit \\
+	\trans{sobald ich eine Antwort erhalten habe}
+\end{interlin}
 
-\subsubsection{} Das Ziel eines transitiven Verbs im Kausativ kann im Dativ stehen, \N{oel \uwave{ngaru} tseykìye'a tsat} \E{Ich werde dafür sorgen, dass \uwave{du} es siehst} (siehe \horenref{syn:trans-causative}). \index{Kasus!Dativ!mit Kausativ}
+\subsection{Dativ} Der Dativ wird für das indirekte Objekt ditransitiver Verben verwendet:\index{Kasus!Dativ}\index{indirektes Objekt}
 
-\subsubsection{} Das Verb \N{lu} bildet mit dem Dativ ein besitzanzeigendes Idiom, wo das Deutsche das Verb ,haben‘ verwendet, \N{lu oeru ikran} \E{Ich habe eine Banshee}. In dieser Konstruktion steht das Verb üblicherweise am Anfang des Satzes. \index{Kasus!Dativ!mit \textbf{lu}}
+\begin{interlin}
+	\glll \Npawl{}sìltsana fmawn a tsun oe \uwave{ayngaru} tivìng \\
+	sìltsan-a fmawn a tsun oe ay-nga-ru t\INF{iv}ìng \\
+	gut-\I{lig} Nachricht \I{rel} können \I{1sg} \I{pl-2sg-dat} geben\I{\INF{subj}} \\
+	\trans{gute Nachrichten, die ich euch geben kann}
+\end{interlin}
+
+\subsubsection{} Das Objekt eines \N{si}-Verbs steht im Dativ:\label{syn:case:dative-si}
+
+\begin{interlin}
+	\glll Oe irayo si ngaru. \\
+	oe irayo si nga-ru \\
+	\I{1sg} Dank \I{aux} \I{2sg-dat} \\
+	\trans{Ich danke dir.}
+\end{interlin}
+
+\subsubsection{} Das Ziel eines transitiven Verbs im Kausativ kann im Dativ stehen (siehe \horenref{syn:trans-causative}):\index{Kasus!Dativ!mit Kausativ}
+
+\begin{interlin}
+	\glll Oel \uwave{ngaru} tseykìye'a tsat. \\
+	oe-l nga-ru ts\INF{eyk}\INF{ìy}e'a tsa-'u-t \\
+	\I{1sg-agt} \I{2sg-dat} sehen\I{\INF{caus}\INF{prox.fut}} \I{dem.dis}-Sache-\I{pat} \\
+	\trans{Ich werde dafür sorgen, dass \uwave{du} es siehst.}
+\end{interlin}
+
+\subsubsection{} Das Verb \N{lu} bildet mit dem Dativ ein besitzanzeigendes Idiom, wo das Deutsche das Verb ,haben‘ verwendet:
+
+\begin{interlin}
+	\glll Lu oeru ikran. \\
+	lu oe-ru ikran \\
+	sein \I{1sg-dat} Banshee \\
+	\trans{Ich habe eine Banshee.}
+\end{interlin}
+
+In dieser Konstruktion steht das Verb üblicherweise am Anfang des Satzes. \index{Kasus!Dativ!mit \textbf{lu}}
 \index{lu@\textbf{lu}!mit Dativ}\LNWiki{28/1/2010}{https://wiki.learnnavi.org/index.php/Canon\%23Dative_.2B_copula_possessive}
 
-\subsubsection{} Der Dativ des Interesses kann den Geltungsbereich eines Adjektivs auf die Beurteilung \QUAESTIO{oder den Nutzen} einer bestimmten Person beschränken, \N{fì'u oeru prrte' lu} \E{Das ist mir angenehm}, \N{tìpängkxo ayoengeyä mowan lu oeru nìngay} \E{Unser Gespräch ist wirklich angenehm für mich}.
+\subsubsection{} Der Dativ des Interesses kann den Geltungsbereich eines Adjektivs auf die Beurteilung \QUAESTIO{oder den Nutzen} einer bestimmten Person beschränken:
 
-\subsubsection{} Bei Verben des Sprechens, einschließlich eines Wortes wie \N{pawm} \E{fragen}, steht die angesprochene Person im Dativ, \N{oel poru poleng fì'ut} \E{Ich habe ihm dies erzählt} (idiomatischer ist bei \N{pawm} jedoch die Adposition \N{ta} vor der angesprochenen Person).
-\index{Kasus!Dativ!mit Verben des Sprechens}
+\begin{interlin}
+	\glll Fì'u \uwave{oeru} prrte' lu. \\
+	fì-'u oe-ru prrte' lu \\
+	\I{dem.prox}-Sache \I{1sg-dat} angenehm sein \\
+	\trans{Das ist angenehm \uwave{für mich}.}
+\end{interlin}
 
-\subsection{Genitiv} Der Genitiv markiert Besitz, wie in \N{oeyä 'eylan} \E{mein Freund}.\index{Kasus!Genitiv} Siehe aber unten für unveräußerlichen Besitz (\horenref{syn:topical:poss}).\index{Besitz}
+\begin{interlin}
+	\glll Tìpängkxo ayoengeyä mowan lu \uwave{oeru} nìngay. \\
+	tì-pängkxo ay-oe-nga-yä mowan lu oe-ru nì-ngay \\
+	\I{nmlz}-plaudern \I{pl-1sg-2sg-gen} angenehm sein \I{1sg-dat} \I{advz}-wahr \\
+	\trans{\uwave{Ich finde} unser Gespräch wirklich angenehm.}
+\end{interlin}
 
-\subsubsection{} Der Genitiv kann prädikativ verwendet werden, wie in \N{fìtseng lu awngeyä} \E{Dieser Ort ist unser}. Der Platzhalter \N{pum} \E{die besessene Sache} wird jedoch häufiger verwendet, \Npawl{kelku ngeyä lu tsawl; \uwave{pum oeyä} lu hì’i} \E{Dein Haus ist groß; \uwave{meines} ist klein}. \label{syn:pum:genitive}
+\subsubsection{} Bei Verben des Sprechens, einschließlich eines Wortes wie \N{pawm} \E{fragen}, steht die angesprochene Person im Dativ (idiomatischer ist bei \N{pawm} jedoch die Adposition \N{ta} vor der angesprochenen Person):\index{Kasus!Dativ!mit Verben des Sprechens}
+
+\begin{interlin}
+	\glll Oel \uwave{poru} poleng fì'ut. \\
+	oe-l po-ru p\INF{ol}eng fì-'u-t \\
+	\I{1sg-agt} \I{3sg-dat} erzählen\I{\INF{pfv}} \I{dem.prox}-Sache-\I{pat} \\
+	\trans{Ich habe \uwave{ihm} dies erzählt.}
+\end{interlin}
+
+\subsection{Genitiv} Der Genitiv markiert Besitz, wie in \N{oeyä 'eylan} \E{mein Freund}.\index{Kasus!Genitiv} Siehe aber \horenref{syn:topical:poss} unten für unveräußerlichen Besitz.\index{Besitz}
+
+\subsubsection{} Der Genitiv kann prädikativ verwendet werden:
+
+\begin{interlin}
+	\glll Fìtseng lu awngeyä. \\
+	fì-tseng lu ay-oe-nga-yä \\
+	\I{dem.prox}-Ort sein \I{pl-1sg-2sg-gen} \\
+	\trans{Dieser Ort ist unserer.}
+\end{interlin}
+
+\noindent Der Platzhalter \N{pum} für die besessene Sache wird jedoch häufiger verwendet:\label{syn:pum:genitive}
 \index{pum@\textbf{pum}!mit Genitiv}
 
-\subsubsection{} Der \textit{genitivus partitivus} bezeichnet das größere Ganze, von dem etwas eine Teilmenge ist, \Nfilm{Na'\-vi\-yä luyu hapxì} \E{Du bist ein Teil des Volkes}. Dies wird auch bei Brüchen verwendet, \Npawl{Tsu'teyìl tolìng oer mawlit \uwave{smarä}} \E{Tsu'tey gab mir die Hälfte \uwave{der Beute}}.\\
-\indent Alternativ zum Genitiv kann die Adposition \N{ta} verwendet werden, \Npawl{Na'vita luyu hapxì}.\linebreak \QUAESTIO{Es ist nicht klar, ob die Verwendung von Genitiv und \N{ta} immer beliebig ist.} \NTeri{10/1/2025}{https://naviteri.org/2025/01/tsaliu-alu-pum-aysaomum-asawnung-additional-information-about-pum/}
+\begin{interlin}
+	\glll \Npawl{}Kelku ngeyä lu tsawl; pum oeyä lu hì'i. \\
+	kelku nga-yä lu tsawl pum oe-yä lu hì'i \\
+	Haus \I{2sg-gen} sein groß \I{pro} \I{1sg-gen} sein klein \\
+	\trans{Dein Haus ist groß; \uwave{meines} ist klein.}
+\end{interlin}
+
+\subsubsection{} Ebenfalls im Genitiv steht ein größeres Ganzes, von dem etwas eine Teilmenge ist (sog. \textit{genitivus partitivus}):
+
+\begin{interlin}\label{gen:partitive:ex01}
+	\glll \Nfilm{}Na'viyä luyu hapxì. \\
+	Na'vi-yä l\INF{uy}u hapxì \\
+	Volk-\I{gen} sein\I{\INF{cerem}} Teil \\
+	\trans{Du bist ein Teil des Volkes.}
+\end{interlin}
+
+\pagebreak
+\noindent Der Genitiv wird auch bei Brüchen verwendet:
+
+\begin{interlin}
+	\glll \Npawl{}Tsu'teyìl tolìng oer mawlit smarä. \\
+	Tsu'tey-ìl t\INF{ol}ìng oe-r mawl-it smar-ä \\
+	Tsu'tey-\I{agt} geben\I{\INF{pfv}} \I{1sg-dat} Hälfte-\I{pat} Beute-\I{gen} \\
+	\trans{Tsu'tey hat mir die Hälfte der Beute gegeben.}
+\end{interlin}
+
+\noindent Alternativ zum Genitiv kann die Adposition \N{ta} verwendet werden: 
+
+\begin{interlin}
+	\glll \Npawl{}Na'vita luyu hapxì. \\
+	Na'vi-ta l\INF{uy}u hapxì \\
+	Volk-von sein\I{\INF{cerem}} Teil \\
+	\trans{Du bist ein Teil des Volkes.}
+\end{interlin}
+
+\noindent\QUAESTIO{Es ist nicht klar, ob die Verwendung von Genitiv und \N{ta} immer beliebig ist.} \NTeri{10/1/2025}{https://naviteri.org/2025/01/tsaliu-alu-pum-aysaomum-asawnung-additional-information-about-pum/}
 \index{Kasus!Genitiv!Teilmenge}\label{syn:partitive-gen}
 
-\subsubsection{} Der Genitiv wird gelegentlich von der dazugehörigen Nominalphrase getrennt, \Nfilm{Na'\-vi\-yä luyu hapxì} \E{Du bist ein Teil des Volkes}.\index{Kasus!Genitiv!Trennung vom Substantiv}
+\subsubsection{} Der Genitiv wird gelegentlich von der dazugehörigen Nominalphrase getrennt (z. B. -- wie in Beispiel (\ref{gen:partitive:ex01})) -- durch ein Verb.\index{Kasus!Genitiv!Trennung vom Substantiv}
 
 \subsubsection{} Der Genitiv wird auch als Attribut deverbaler Substantive verwendet, wie in \Npawl{tì\-ftia ki\-fke\-yä} \E{Studium der natürlichen Welt}.
 
@@ -344,24 +794,24 @@ In Prosa steht eine Nominalphrase im Topik-Fall so früh wie möglich im Satz: a
 
 \begin{interlin}
 	\glll Srake ngari re'o tìsraw si? \\
-	srake nga-ri re'o tìsraw si \\
-	\I{q} 2\I{sg}-\I{top} Kopf Schmerz tun \\
+	srake nga-ri re'o tì-sraw si \\
+	\I{pq} \I{2sg-top} Kopf \I{nmlz}-schmerzhaft \I{aux} \\
 	\trans{Tut dir der Kopf weh?}
 \end{interlin}
 
 \begin{interlin}
 	\glll Ngari srake re'o tìsraw si? \\
-	nga-ri srake re'o tìsraw si \\
-	2\I{sg}-\I{top} \I{q} Kopf Schmerz tun \\
+	nga-ri srake re'o tì-sraw si \\
+	\I{2sg-top} \I{pq} Kopf \I{nmlz}-schmerzhaft \I{aux} \\
 	\trans{Tut dir der Kopf weh?}
 \end{interlin}
 
 \noindent Auch im komplexen Satz kann das Topik der Konjunktion vorausgehen:
 
 \begin{interlin}
-	\glll Fori mawkrra fa renten ioi säpoli holum. \\
-	fo-ri mawkrra fa renten ioi s\INF{äp}\INF{ol}i h\INF{ol}um \\
-	2\I{pl}-\I{top} nachdem mittels Brille Schmuck \INF{\I{refl}}tun\INF{\I{pfv}} weggehen\INF{\I{pfv}}\\
+	\glll \Npawl{}Fori mawkrra fa renten ioi säpoli holum. \\
+	ay-po-ri mawkrr-a fa renten ioi s\INF{äp}\INF{ol}i h\INF{ol}um \\
+	\I{pl-3sg-top} nach-\I{lig} mittels Brille Schmuck \I{aux\INF{refl}\INF{pfv}} weggehen\INF{\I{pfv}} \\
 	\trans{Nachdem sie ihre Brillen aufgesetzt hatten, gingen sie weg.}
 \end{interlin}
 \LNWiki{8/10/2011}{https://wiki.learnnavi.org/index.php/Canon/2011/April-December\%23Topical_Position}
@@ -369,9 +819,27 @@ In Prosa steht eine Nominalphrase im Topik-Fall so früh wie möglich im Satz: a
 
 \paragraph{} \index{Riff-Na'vi!Position des Topik}
 \index{Kasus!Topik!Position im Riff-Na'vi}
-Im Riff-Na'vi kann das Topik auch am Ende eines Satzes stehen, \N{irayo \uwave{fìstxeliri alor}} \E{Danke für dieses schöne Geschenk}. Im Wald-Na'vi verlässt das Topik nur in Gedichten und Liedern die Anfangsposition. \Omaticon
+Im Riff-Na'vi kann das Topik auch am Ende eines Satzes stehen:
 
-\subsubsection{} Einige idiomatische Ausdrücke weisen besondere Verwendungen des Topik auf. Beispielsweise wird der Topik-Kasus oft mit dem \N{si}-Verb \N{irayo si} \E{danken} verwendet, um die Sache anzuzeigen, für die man sich bedankt, \Npawl{\uwave{tìmweypeyri ayngeyä} seiyi irayo nìngay} \E{Ich danke euch wirklich \uwave{für eure Geduld}}. Diese Verben müssen aus dem Wörterbuch gelernt werden.
+\begin{interlin}
+	\glll Irayo \uwave{fìtstxeliri} \uwave{alor}. \\
+	irayo fì-stxeli-ri a-lor \\
+	danke \I{dem.prox}-Geschenk-\I{top} \I{lig}-schön \\
+	\trans{Danke für dieses schöne Geschenk.}
+\end{interlin}
+
+\noindent Im Wald-Na'vi verlässt das Topik nur in Gedichten und Liedern die Anfangsposition. \\\Omaticon
+
+\subsubsection{} Einige idiomatische Ausdrücke weisen besondere Verwendungen des Topik auf. Beispielsweise wird der Topik-Kasus oft mit dem \N{si}-Verb \N{irayo si} \E{danken} verwendet, um die Sache anzuzeigen, für die man sich bedankt:
+
+\begin{interlin}
+	\glll \Npawl{}\uwave{Tìmweypeyri} \uwave{ayngeyä} seiyi irayo nìngay. \\
+	tì-maweypey-ri ay-oe-nga-yä s\INF{ei}i irayo nì-ngay \\
+	\I{nmlz}-gedulden-\I{top} \I{pl-1sg-2sg-gen} \I{aux\INF{pos.aff}} Dank \I{advz}-wahr \\
+	\trans{Ich danke euch wirklich \uwave{für eure Geduld}.}
+\end{interlin}
+
+\noindent Diese Verben müssen aus dem Wörterbuch gelernt werden.
 
 \subsubsection{}
 \index{Besitz!unveräußerlich}\label{syn:topical:poss}
@@ -379,17 +847,47 @@ Im Riff-Na'vi kann das Topik auch am Ende eines Satzes stehen, \N{irayo \uwave{f
 \index{Topik!unveräußerlicher Besitz}
 Das Topik kann zur Kennzeichnung von unveräußerlichem Besitz\footnote{\href{https://de.wikipedia.org/wiki/Alienabilität}{Vgl. Wikipedia: Alienabilität}} verwendet werden. Zum unveräußerlichen Besitz zählen diejenigen Dinge, die einer Person von Natur aus gehören und die theoretisch nicht weggegeben oder genommen werden können (außer durch Beschädigung). In den meisten Sprachen, die unveräußerlichen Besitz kennen, gibt es für Körperteile und manchmal für Blutsverwandte häufig besondere grammatikalische Regeln. Im Na'vi wird der Topik-Fall für Verwandte üblicherweise nicht verwendet, aber die nachfolgenden Beispiele zeigen, dass Körperteile, der eigene Geist und das eigene Leben als unveräußerlich gelten:
 
-\begin{quotation}
-	\noindent\Npawl{\uwave{Oeri} nì'i'a \uwave{tsyokx} zoslolu.} \E{\uwave{Meine Hand} ist endlich geheilt.}\\
-	\noindent\Npawl{\uwave{Oeri} tìngayìl \uwave{txe'lanit} tivakuk.} \E{Lass die Wahrheit \uwave{mein Herz} treffen.}\\
-	\noindent\Nfilm{\uwave{Oeri} ta peyä fahew akewong \uwave{ontu} teya längu.}\\
-	\indent\E{\uwave{Meine Nase} ist erfüllt von seinem Aliengestank.}\\
-	\noindent\Nfilm{\uwave{Ngari} hu Eywa salew \uwave{tirea}, \uwave{tokx} 'ì'awn slu Na’viyä hapxì.}\\
-	\indent\E{\uwave{Dein Geist} geht mit Eywa, \uwave{dein Körper} bleibt, um Teil des Volkes zu werden.}\\
-	\noindent\Npawl{\uwave{Ngari tswintsyìp} sevin nìtxan lu nang!} \E{Was du für ein schönes \uwave{Zöpfchen} hast! }\\
-	\noindent\Npawl{Tseiun oe pivlltxe san \uwave{oeri} lu \uwave{tìrey} sìltsan nìngay sìk.}\\
-	\indent\E{Ich kann glücklicherweise sagen, dass \uwave{mein Leben} wirklich gut ist.}
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}\uwave{Oeri} nì'i'a \uwave{tsyokx} zoslolu. \\
+	oe-ri nì-'i'a tsyokx zosl\INF{ol}u \\
+	\I{1sg-top} \I{advz}-enden Hand heilen\I{\INF{pfv}} \\
+	\trans{\uwave{Meine Hand} ist endlich geheilt.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}\uwave{Oeri} tìngayìl \uwave{txe'lanit} tivakuk. \\
+	oe-ri tì-ngay-ìl txe'lan-it t\INF{iv}akuk \\
+	\I{1sg-top} \I{nmlz}-wahr-\I{agt} Herz-\I{pat} treffen\I{\INF{subj}} \\
+	\trans{Lass die Wahrheit \uwave{mein Herz} treffen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Nfilm{}\uwave{Oeri} ta peyä fahew akewong \uwave{ontu} teya längu. \\
+	oe-ri ta po-yä fahew a-kewong ontu teya l\INF{äng}u\\
+	\I{1sg-top} von \I{3sg-gen} Gestank \I{lig}-alienhaft Nase erfüllt sein\I{\INF{neg.aff}} \\
+	\trans{\uwave{Meine Nase} ist erfüllt von seinem Aliengestank.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Nfilm{}\uwave{Ngari} hu Eywa salew \uwave{tirea}, \uwave{tokx} 'ì'awn, slu Na'viyä hapxì. \\
+	nga-ri hu Eywa salew tirea tokx 'ì'awn slu Na'vi-yä hapxì \\
+	\I{2sg-top} mit Eywa weitergehen Geist Körper bleiben werden Volk-\I{gen} Teil \\
+	\trans{\uwave{Dein Geist} geht weiter mit Eywa, \uwave{dein Körper} bleibt, um Teil des Volkes zu werden.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}\uwave{Ngari} \uwave{tswintsyìp} sevin nìtxan lu nang! \\
+	nga-ri tswin-tsyìp sevin nì-txan lu nang \\
+	\I{2sg-top} Zopf-\I{dim} schön \I{advz}-viel sein \I{mir} \\
+	\trans{Was du für ein schönes \uwave{Zöpfchen} hast!}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Tseiun oe pivlltxe san \uwave{oeri} lu \uwave{tìrey} sìltsan nìngay sìk. \\
+	ts\INF{ei}un oe p\INF{iv}lltxe san oe-ri lu tì-rey sìltsan nì-ngay sìk \\
+	können\I{\INF{pos.aff}} \I{1sg} sagen\I{\INF{subj}} \I{quot} \I{1sg-top} sein \I{nmlz}-leben gut \I{advz}-wahr \I{quot} \\
+	\trans{Ich kann glücklicherweise sagen, dass \uwave{mein Leben} wirklich gut ist.}
+\end{interlin}
 
 \noindent Bei den meisten Beispielen ist zu beachten, dass das besessene Substantiv nicht unmittelbar neben dem Topik stehen muss. 
 \NTeri{11/7/2010}{https://naviteri.org/2010/07/diminutives-conversational-expressions/}
@@ -406,10 +904,10 @@ Familienmitglieder werden im Na'vi grammatikalisch nicht als unveräußerlich be
 \noindent Hier wird das Topik nicht für unveräußerlichen Besitz benutzt, sondern um den Fokus auf die Situation von Sprecher B zu lenken.
 \LNForum{13/5/2024}{https://forum.learnnavi.org/index.php?msg=698456}
 
-\subsubsection{} Der Topik kann auch verwendet werden, um den Bezugspunkt eines auf Gemeinsamkeiten basierenden Vergleichs zu bezeichnen (siehe \horenref{syntax:adj-eql-comp}).
+\subsubsection{} Der Topik-Fall kann auch verwendet werden, um den Bezugspunkt eines auf Gemeinsamkeiten basierenden Vergleichs zu bezeichnen (siehe \horenref{syntax:adj-eql-comp}).
 
 \subsection{Subjekt-Auslassung} \index{Subjekt!Auslassung}\label{subject-dropping}
-Im Deutschen und in vielen anderen europäischen Sprachen kann das Subjekt wegfallen, solange es gleich bleibt:
+Im Deutschen und in vielen anderen europäischen Sprachen kann das Subjekt wegfallen, wenn es wiederholt wird:
 
 \begin{quotation}
 	\noindent Ich fuhr nach Hause und \_ ging ins Bett.
@@ -417,35 +915,93 @@ Im Deutschen und in vielen anderen europäischen Sprachen kann das Subjekt wegfa
 
 \noindent Anstelle des Unterstrichs wird dasselbe Subjekt, \E{ich}, verstanden.
 
-Na'vi hat mindestens drei Fälle, die im weitesten Sinne als ,Subjekt‘ verstanden werden können: Der Absolutiv, der Agens-Fall und manchmal sogar der Dativ können sich einem subjekt-ähnlichen Verhalten annähern, etwa in \N{fì'u sunu \uwave{oer}} \E{\uwave{Ich} mag dies}.
+Na'vi hat mindestens drei Fälle, die im weitesten Sinne als ,Subjekt‘ verstanden werden können: Der Absolutiv, der Agens-Fall und manchmal sogar der Dativ können sich einem subjekt-ähnlichen Verhalten annähern:
 
-Im Na'vi kann alles, was subjektähnlich ist, entfallen, solange der Kontext klar ist.
+\begin{interlin}
+	\glll Fì'u sunu \uwave{oer}. \\
+	fì-'u sunu oe-r \\
+	\I{dem.prox}-Sache gefallen \I{1sg-dat} \\
+	\trans{\uwave{Ich} mag dies.}
+\end{interlin}
 
-\begin{quotation}
-	\noindent\N{Oeru lu upxare ulte \_ zene tivätxaw.} \E{Ich habe Nachrichten und \_ muss zurückkehren.}\\
-	\noindent\N{Teylu sunu oer. Yom pxìm!} \E{Ich mag Teylu. (Ich) esse (es) oft!}\\
-	\noindent\Npawl{Fayupxaremì \uwave{oe} payängkxo teri horen lì’fyayä leNa’vi fpi sute a tsun srekrr tsat sivar. Ayngeyä sìpawmìri kop fmayi fìtsenge tivìng sì’eyngit.}\\
-	\indent\E{In diesen Mitteilungen werde \uwave{ich} für Leute, die sie bereits anwenden können, über die Regeln der Sprache der Na'vi sprechen. \uwave{(Ich)} werde auch versuchen, hier Antworten auf eure Fragen zu geben.}
-\end{quotation}
+\noindent Im Na'vi kann alles, was subjektähnlich ist, entfallen, solange der Kontext ersichtlich ist:
 
-\noindent Wenn eine Klarstellung erforderlich ist, wird einfach das entsprechende Pronomen verwendet. Beispielsweise könnte man im ersten Beispiel oben auch \N{oe zene tivätxaw} sagen. Man beachte auch im zweiten Beispiel, dass das ,Subjekt‘ im ersten Satz im Dativ steht, \N{oer}, während im zweiten Satz das ausgelassene Subjekt im Agens stehen würde, \N{oel}.
+\begin{interlin} \label{omit:subject:ex01}
+	\glll Oeru lu upxare ulte zene tivätxaw. \\
+	oe-ru lu ay-'upxare ulte zene t\INF{iv}ätxaw \\
+	\I{1sg-dat} sein \I{pl}-Nachricht und müssen zurückkehren\I{\INF{subj}} \\
+	\trans{Ich habe Nachrichten und (ich) muss zurückkehren.}
+\end{interlin}
+
+\begin{interlin} \label{omit:subject:ex02}
+	\glll Teylu sunu oer; yom pxìm! \\
+	Teylu sunu oe-r yom pxìm \\
+	Käferlarve gefallen \I{1sg-dat} essen oft \\
+	\trans{Ich mag Käferlarven; (ich) esse (sie) oft!}
+\end{interlin}
+
+\begin{interlin}
+	Kontext: \Npawl{Fayupxaremì \uwave{oe} payängkxo teri horen lì’fyayä leNa'vi fpi sute a tsun srekrr tsat sivar.} \E{In diesen Mitteilungen werde \uwave{ich} für Leute, die sie bereits anwenden können, über die Regeln der Sprache der Na'vi sprechen.} 
+	\glll \Npawl{}Ayngeyä sìpawmìri kop fmayi fìtsenge tivìng sì'eyngit. \\
+	ay-nga-yä ay-tì-pawm-ìri kop fm\INF{ay}i fì-tsenge t\INF{iv}ìng ay-tì-'eyng-it \\
+	\I{pl-2sg-gen} \I{pl-nmlz}-fragen-\I{top} zudem versuchen\I{\INF{fut}} \I{dem.prox}-Ort geben\I{\INF{subj}} \I{pl-nmlz}-antworten-\I{pat} \\
+	\vskip-4pt\textit{\uwave{(Ich)} werde zudem versuchen, hier Antworten auf eure Fragen zu geben.}
+\end{interlin}
+
+\noindent Wenn eine Klarstellung erforderlich ist, wird einfach das entsprechende Pronomen verwendet. Beispielsweise könnte man in Beispiel (\ref{omit:subject:ex01}) auch \N{oe zene tivätxaw} sagen. Man beachte auch in Beispiel (\ref{omit:subject:ex02}), dass das ,Subjekt‘ im ersten Satz im Dativ steht, \N{oer}, während im zweiten Satz das ausgelassene Subjekt im Agens stehen würde, \N{oel}.
 \LNForum{25/10/2022}{https://forum.learnnavi.org/index.php?msg=679687}
 
 
 \section{Adpositionen}\index{Adpositionen}
-\noindent Na'vi-Adpositionen können mit Substantiven, Pronomen und Adverbien des Ortes und der Zeit verwendet werden. Über die Verwendungsmöglichkeiten und Bedeutungen einzelner Adpositionen gibt das Wörterbuch auf \href{https://learnnavi.org/navi-vocabulary/}{LearnNavi.org} oder Stefan Müllers \href{https://forum.learnnavi.org/index.php?msg=613941}{Annotated Dictionary} Aufschluss.
+\noindent Na'vi-Adpositionen können mit Substantiven, Pronomen und Adverbien des Ortes und der Zeit verwendet werden. Über die Verwendungsmöglichkeiten und Bedeutungen einzelner Adpositionen geben das Wörterbuch auf \href{https://learnnavi.org/navi-vocabulary/}{LearnNavi.org} und Stefan Müllers \href{https://forum.learnnavi.org/index.php?msg=613941}{Annotated Dictionary} Aufschluss.
 
-\subsection{Position} Adpositionen können an zwei Stellen stehen: Entweder stehen sie vor der gesamten Nominalphrase, die sie modifizieren und werden dann als separate Wörter geschrieben, \Npawl{\uwave{ta} peyä fahew akewong} \E{\uwave{mit (von)} seinem Aliengestank}, \Nfilm{ngari \uwave{hu Eywa} salew tirea} \E{Dein Geist geht \uwave{mit Eywa}}. Oder sie stehen enklitisch, in diesem Fall werden sie immer an das Wort angehängt, \Npawl{fìtrr\uwave{mì} letsranten} \E{an diesem wichtigen Tag}, \Npawl{aylì'u\uwave{fa} awngeyä 'eylanä a'ewan} \E{in den Worten unseres jungen Freundes}, \Npawl{lala tsarel\uwave{mì} arusikx} \E{in diesem alten Film}.
-\index{Adpositionen!Position}\label{syn:adp:position}
+\subsection{Position} Adpositionen können an zwei Stellen stehen: Entweder stehen sie vor der gesamten Nominalphrase, die sie modifizieren und werden dann als separate Wörter geschrieben: 
 
-\subsection{Lenisierung}\index{Plural!Kurzform} Einige Adpositionen verursachen Lenisierung im folgenden Wort. In Wörterbüchern werden diese in der Regel als ,adp.+‘ angegeben, wobei das Pluszeichen wie üblich die Lenisierung anzeigt.
+\begin{interlin}
+	\glll \Nfilm{}\uwave{ta} peyä fahew akewong \\
+	ta po-yä fahew a-kewong \\
+	von \I{3sg-gen} Gestank \I{lig}-alienhaft \\
+	\trans{\uwave{von} seinem Aliengestank}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Nfilm{}Ngari \uwave{hu} Eywa salew tirea. \\
+	nga-ri hu Eywa salew tirea \\
+	\I{2sg-top} mit Eywa weitergehen Geist \\
+	\trans{Dein Geist geht weiter \uwave{mit} Eywa.}
+\end{interlin}
+
+\noindent Oder sie stehen enklitisch; in diesem Fall werden sie an das Wort angehängt:\index{Adpositionen!Position}\label{syn:adp:position}
+
+\begin{interlin}
+	\glll \Npawl{}fìtrr\uwave{mì} letsranten \\
+	fì-trr-mì le-tsranten \\
+	\I{dem.prox}-Tag-an \I{adjz}-wichtig.sein \\
+	\trans{\uwave{an} diesem wichtigen Tag}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}aylì'u\uwave{fa} awngeyä 'eylanä a'ewan \\
+	ay-lì'u-fa ay-oe-nga-yä 'eylan-ä a-'ewan \\
+	\I{pl}-Wort-mit \I{pl-1sg-2sg-gen} Freund-\I{gen} \I{lig}-jung \\
+	\trans{\uwave{mit} den Worten unseres jungen Freundes}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}lala tsarel\uwave{mì} arusikx \\
+	lal-a tsa-rel-mì a-r\INF{us}ikx \\
+	alt-\I{lig} \I{dem.dis}-Bild-in \I{lig}-bewegen\I{\INF{act.pcpl}} \\
+	\trans{\uwave{in} diesem alten Film}
+\end{interlin}
+
+\subsection{Lenisierung}\index{Plural!Kurzform} Einige Adpositionen verursachen Lenisierung im folgenden Wort (für eine Liste siehe \horenref{adp:len}). In Wörterbüchern werden diese in der Regel als ,adp.+‘ angegeben, wobei das Pluszeichen wie üblich die Lenisierung anzeigt.
 
 \subsubsection{} Enklitische Adpositionen verursachen bei dem Wort, an das sie angehängt sind, keine Lenisierung, \N{mì hilvan} \E{in einem Fluss}, aber \N{kilvanmì}. Die Kombination \N{hilvanmì} kann nur \E{in Flüssen} bedeuten. Enklitische Adpositionen verursachen auch keine Lenisierung bei einem folgenden Wort, \N{fo kilvanmì kllkxem} \E{Sie stehen in einem Fluss}, nicht \N{fo kilvanmì *hllkxem}.
 
 Allerdings wird ein Wort, das unmittelbar auf eine nicht enklitische Adposition folgt, lenisiert. Es muss dabei nicht unbedingt das Wort sein, das von der Adposition modifiziert wird, \N{mì hivea trr} \E{am siebten Tag} (nicht \N{*mì kivea srr}).
 \LNWiki{24/8/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/July-September\%23Fmawno}
 
-\subsubsection{} Da die Lenisierung allein auch für die kurze Pluralform (\horenref{morph:short-plural}) verwendet wird, kann es je nach Diskurskontext zu Unklarheiten beim Numerus kommen. Um ihn eindeutig zu bestimmen, wird die vollständige Pluralvorsilbe \N{ay+} verwendet; die lenisierte Form ohne \N{ay+} sollte als Singular interpretiert werden.
+\subsubsection{} Da die Lenisierung allein auch für die kurze Pluralform (siehe \horenref{morph:short-plural}) verwendet wird, kann es je nach Diskurskontext zu Unklarheiten beim Numerus kommen. Um ihn eindeutig zu bestimmen, wird die vollständige Pluralvorsilbe \N{ay+} verwendet; die lenisierte Form ohne \N{ay+} sollte als Singular interpretiert werden.
 \index{Plural!Kurzform!mit lenierenden Adpositionen}\label{syn:adp:short-plural}\NTeri{1/7/2010}{https://naviteri.org/2010/07/thoughts-on-ambiguity/}
 
 
@@ -738,46 +1294,132 @@ Allerdings wird ein Wort, das unmittelbar auf eine nicht enklitische Adposition 
 \section{Adverben}
 \index{Adverben}
 
-\subsection{Maß und Menge} Adverbien des Maßes und der Menge folgen sehr oft dem Element, das sie modifizieren: \Npawl{'Rrtamì tsranten \uwave{nìtxan} awngaru \uwave{nìwotx}} \E{Das bedeutet uns \uwave{allen} auf der Erde \uwave{sehr viel}}.
+\subsection{Maß und Menge} Adverbien des Maßes und der Menge folgen sehr oft dem Element, das sie modifizieren:
 
-\subsubsection{} Ein sehr häufiges Muster bei prädikativen Adjektiven ist ,Adj. -- \N{lu} -- Adv.‘, \Npawl{ngeyä lì'fya leNa'vi \uwave{txantsan lu nìngay}} \E{Dein Na'vi ist wirklich ausgezeichnet}. In umgekehrter Reihenfolge begegnet in einem Dialog des ersten Films einmal das Muster ,Adv. -- \N{lu} -- Adj.‘, \Nfilm{peyä menarisì \uwave{nìhawng lu hì'i}} \E{und seine Augen sind zu klein}.
+\begin{interlin}
+	\glll \Npawl{}'Rrtamì tsranten \uwave{nìtxan} awngaru \uwave{nìwotx}. \\
+	'Rrta-mì tsranten nì-txan ay-oe-nga-ru nì-wotx \\
+	Erde-in wichtig.sein \I{advz}-viel \I{pl-1sg-2sg-dat} \I{advz}-Gänze \\
+	\trans{Das bedeutet uns \uwave{allen} auf der Erde \uwave{sehr viel}.}
+\end{interlin}
 
-\subsection{Mit Gerundien} Der verbale Ursprung des Gerundiums erlaubt, dass es auch ein Adverb annehmen kann,\footnote{Anm. d. Ü.: Dies funktioniert gut für englische Übersetzungen, da das Englische über ein Gerundium verfügt. Ins Deutsche lässt es sich nicht so leicht übertragen und wird oft als Substantivierung dargestellt.} \Npawl{koren a'awve \uwave{tìruseyä 'awsiteng}} \E{die erste Regel \uwave{des Zusammenlebens}}. \index{Gerundium!mit Adverb}\label{syn:adverbs:gerund}
+\subsubsection{} Ein sehr häufiges Muster mit prädikativen Adjektiven ist ,Adj. -- \N{lu} -- Adv.‘: 
 
-\subsection{Korrelativa} Die Verben \N{'ul} \E{zunehmen} und \N{nän} \E{abnehmen} werden idiomatisch als korrelative Adverbien verwendet, \N{'ul ... 'ul} \E{je mehr ... desto mehr} und \N{nän ... nän} \E{je weniger ... desto weniger}. Substantive in diesen Konstruktionen stehen im Singular. \index{Vergleich!mit Korrelativa}
+\begin{interlin}
+	\glll \Npawl{}Ngeyä lì'fya leNa'vi \uwave{txantsan} \uwave{lu} \uwave{nìngay}. \\
+	nga-yä lì'fya le-Na'vi txantsan lu nì-ngay \\
+	\I{2sg-gen} Sprache \I{adjz}-Na'vi ausgezeichnet sein \I{advz}-wahr \\
+	\trans{Dein Na'vi ist wirklich ausgezeichnet.}
+\end{interlin}
 
-\begin{quotation}
-	\noindent\Npawl{'Ul tskxekeng si, 'ul fnan.} \E{Je mehr du übst, desto besser wirst du.}\\
-	\noindent\Npawl{'Ul tute, 'ul tìngäzìk.} \E{Je mehr Leute, desto mehr Probleme.}\\
-	\noindent\Npawl{Nän ftia, nän lu skxom a emza'u.}\\
-	\indent\E{Je weniger du lernst, desto schlechter sind deine Chancen, zu bestehen.}\\
-	\noindent\Npawl{Nän yom kxamtrr, 'ul 'efu ohakx kaym.}\\
-	\indent\E{Je weniger du mittags isst, desto hungriger bist du am Abend.}
-\end{quotation}
+\noindent In umgekehrter Reihenfolge begegnet in einem Dialog des ersten Films einmal das Muster ,Adv. -- \N{lu} -- Adj.‘: 
+
+\begin{interlin}
+	\glll \Nfilm{}Peyä menarisì \uwave{nìhawng} \uwave{lu} \uwave{hì'i}. \\
+	po-yä me-nari-sì nì-hawng lu hì'i \\
+	\I{3sg-gen} \I{du}-Auge-und \I{advz}-Fülle \\
+	\trans{Und seine Augen sind zu klein.}
+\end{interlin}
+
+\subsection{Mit Gerundien} Der verbale Ursprung des Gerundiums erlaubt, dass es auch ein Adverb annehmen kann:\index{Gerundium!mit Adverb}\label{syn:adverbs:gerund}\footnote{Anm. d. Ü.: Dies funktioniert gut für englische Übersetzungen, da das Englische über ein Gerundium verfügt. Ins Deutsche lässt es sich nicht so leicht übertragen und wird oft als Substantivierung dargestellt.}
+
+\begin{interlin}
+	\glll \Npawl{}koren a'awve \uwave{tìruseyä} \uwave{'awsiteng} \\
+	koren a-'aw-ve tì-r\INF{us}ey-ä 'awsiteng \\
+	Regel \I{lig}-eins-\I{ord} \I{nmlz}-leben\I{\INF{act.pcpl}-gen} zusammen \\
+	\trans{die erste Regel \uwave{des Zusammenlebens}}
+\end{interlin}
+
+\subsection{Korrelativa} Die Verben \N{'ul} \E{zunehmen} und \N{nän} \E{abnehmen} werden idiomatisch als Konjunktionen mit adverbialer Bedeutung verwendet, \N{'ul ... 'ul} \E{je mehr ... desto mehr} und \N{nän ... nän} \E{je weniger ... desto weniger}. Substantive in diesen Konstruktionen stehen im Singular. \index{Vergleich!mit Korrelativa}
+
+\begin{interlin}
+	\glll \Npawl{}'Ul tskxekeng si, 'ul fnan. \\
+	'ul tskxekeng si 'ul fnan \\
+	je.mehr Übung \I{aux} desto.mehr gut.sein \\
+	\trans{Je mehr du übst, desto besser wirst du.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}'Ul tute, 'ul tìngäzìk. \\
+	'ul tute 'ul tì-ngäzìk \\
+	je.mehr Person desto.mehr \I{nmlz}-schwierig \\
+	\trans{Je mehr Leute, desto mehr Probleme.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Nän ftia, nän lu skxom a emza'u. \\
+	nän ftia nän lu skxom a emza'u \\
+	je.weniger lernen desto.weniger sein Chance \I{rel} bestehen \\
+	\trans{Je weniger du lernst, desto schlechter sind deine Chancen, zu bestehen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Nän yom kxamtrr, 'ul 'efu ohakx kaym. \\
+	nän yom kxamtrr 'ul 'efu ohakx kaym \\
+	je.weniger essen mittags desto.mehr fühlen hungrig abends \\
+	\trans{Je weniger du mittags isst, desto hungriger bist du am Abend.}
+\end{interlin}
 \noindent\NTeri{29/2/2012}{https://naviteri.org/2012/02/trr-asawnung-lefpom-happy-leap-day/}
 
-\subsection{Fìtxan und nìftxan} Die beiden Adverbien \N{fìtxan} und \N{nìftxan} \E{so (sehr)} werden zusammen mit der Konjunktion \N{kuma} (\horenref{syn:attr:kuma}) für Konsekutivsätze verwendet:
+\subsection{Fìtxan und nìftxan} Die beiden Adverbien \N{fìtxan} und \N{nìftxan} \E{so (sehr)} werden zusammen mit der Konjunktion \N{kuma} (siehe \horenref{syn:attr:kuma}) für Konsekutivsätze verwendet:
 
-\begin{quotation}
-	\noindent\Npawl{Lu poe sevin fìtxan / nìftxan kuma yawne slolu oer.}\\
-	\indent\E{Sie war so schön, dass ich mich in sie verliebte.}
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}Lu poe sevin fìtxan kuma yawne slolu oer. \\
+	lu po-e sevin fì-txan kum-a yawne sl\INF{ol}u oe-r \\
+	sein \I{3sg-f} schön \I{dem.prox}-viel Ergebnis-\I{rel} geliebt werden\I{\INF{pfv}} \I{1sg-dat} \\
+	\trans{Sie war so schön, dass ich mich in sie verliebte.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Lu poe sevin nìftxan kuma yawne slolu oer. \\
+	lu po-e sevin nì-fì-txan kum-a yawne sl\INF{ol}u oe-r \\
+	sein \I{3sg-f} schön \I{advz}-\I{dem.prox}-viel Ergebnis-\I{rel} geliebt werden\I{\INF{pfv}} \I{1sg-dat} \\
+	\trans{Sie war so schön, dass ich mich in sie verliebte.}
+\end{interlin}
 
 \noindent In diesen Konstruktionen muss  \N{akum / kuma} direkt neben \N{fìtxan / nìftxan} stehen.
 \NTeri{19/6/2012}{https://naviteri.org/2012/06/spring-vocabulary-part-3/}
 
-\subsection{Keng} Das Adverb \N{keng} \E{selbst, sogar} wird verwendet, um unerwartete Information hervorzuheben, \N{yom teylut \uwave{keng oel}} \E{\uwave{Sogar ich} esse Teylu.}
-\index{keng@\textbf{keng}}
+\subsection{Keng} Das Adverb \N{keng} \E{selbst, sogar} wird verwendet, um unerwartete Information hervorzuheben:\index{keng@\textbf{keng}}
+
+\begin{interlin}
+	\glll Yom teylut \uwave{keng} \uwave{oel}. \\
+	yom teylu-t keng oe-l \\
+	essen Käferlarve-\I{pat} sogar \I{1sg-agt} \\
+	\trans{\uwave{Sogar ich} esse Käferlarven.}
+\end{interlin}
 \LNWiki{31/12/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/October-December\%23Keng}
 
-\subsection{Li} Die Hauptbedeutung von \N{li} ist \E{schon, bereits}, \Npawl{tìkangkem li hasey lu} \E{Die Arbeit ist bereits erledigt.}
-\index{li@\textbf{li}} 
+\subsection{Li} Die Hauptbedeutung von \N{li} ist \E{schon, bereits}:\index{li@\textbf{li}} 
+
+\begin{interlin}
+	\glll \Npawl{}Tìkangkem li hasey lu. \\
+	tì-kangkem li hasey lu \\
+	\I{nmlz}-Arbeit bereits erledigt sein \\
+	\trans{Die Arbeit ist bereits erledigt.}
+\end{interlin}
 \NTeri{20/2/2011}{https://naviteri.org/2011/02/new-vocabulary-part-2/}
 
-\subsubsection{„bisher nicht“} Die Negation, \N{ke li}, bedeutet \E{noch nicht, bisher nicht} und verwendet doppelte Verneinung (\horenref{syn:neg:pleon}), \N{fo ke li ke polähem} \E{Sie sind noch nicht angekommen}.
-\index{bisher nicht}\index{ke@\textbf{ke}!\textbf{ke li}}\NTeri{4/9/2011}{https://naviteri.org/2011/09/\%e2\%80\%9cby-the-way-what-are-you-reading\%e2\%80\%9d/\#comment-1093}
+\subsubsection{„bisher nicht“} Die Negation, \N{ke li}, bedeutet \E{noch nicht, bisher nicht} und verwendet doppelte Verneinung (siehe \horenref{syn:neg:pleon}):\index{bisher nicht}\index{ke@\textbf{ke}!\textbf{ke li}}
 
-\subsubsection{Befehle} Bei Imperativen zeigt \N{li} besondere Dringlichkeit an: \Npawl{Ngal mi fìtsengit terok srak? Li kä!} \E{Du bist noch hier? Geh schon!} Mit \N{ko} (\horenref{syn:particle:ko}), \N{li ko} (betont auf \N{li}), bedeutet es \E{nun, dann mal los}, oder \E{lasst uns loslegen}.
+\begin{interlin}
+	\glll Fo ke li ke polähem. \\
+	ay-po ke li ke p\INF{ol}ähem \\
+	\I{pl-3sg} \I{neg} bereits \I{neg} ankommen\I{\INF{pfv}} \\
+	\trans{Sie sind noch nicht angekommen.}
+\end{interlin}
+\NTeri{4/9/2011}{https://naviteri.org/2011/09/\%e2\%80\%9cby-the-way-what-are-you-reading\%e2\%80\%9d/\#comment-1093}
+
+\subsubsection{Befehle} Bei Imperativen zeigt \N{li} besondere Dringlichkeit an: 
+
+\begin{interlin}
+	\glll \Npawl{}Ngal mi fìtsengit terok srak? Li kä! \\
+	nga-l mi fì-tseng-it t\INF{er}ok srak li kä \\
+	\I{2sg-agt} immer.noch \I{dem.prox}-Ort-\I{pat} sein.in\I{\INF{ipfv}} \I{pq} bereits gehen \\
+	\trans{Du bist noch hier? Geh schon!}
+\end{interlin}
+
+Mit \N{ko} (\horenref{syn:particle:ko}), \N{li ko} (betont auf \N{li}), bedeutet es \E{nun, dann mal los}, oder \E{lasst uns loslegen}.
 
 \subsubsection{Zögerlichkeit} In Antworten vermittelt es ein etwas zögerliches ,Ja‘, ähnlich wie im Deutschen ,sozusagen‘ oder ,nun ja‘:
 
@@ -788,85 +1430,209 @@ Allerdings wird ein Wort, das unmittelbar auf eine nicht enklitische Adposition 
 
 \noindent Die Negation \N{ke li} bedeutet hierbei in etwa \E{nicht wirklich}. 
 
-\subsubsection{Mit „sre“} Wenn \N{li} mit der Adposition \N{sre} verwendet wird, bedeuten sie \E{bis spätestens, aber nicht danach}, \Npawl{kem si li trraysre} \E{Erledige das bis spätestens morgen}. \label{syn:li:sre} Wenn \N{sre} vor dem Substantiv steht, verbindet es sich mit \N{li} zu \N{\ACC{li}sre}, das wie \N{sre} lenisiert, \Npawl{kem si lisre srray} \E{Erledige das bis spätestens morgen}.
-\index{lisre@\textbf{lisre}}
+\subsubsection{Mit „sre“} Wenn \N{li} mit der Adposition \N{sre} verwendet wird, bedeuten sie \E{bis spätestens, aber nicht danach}:\label{syn:li:sre}
+
+\begin{interlin}
+	\glll \Npawl{}Kem si li trraysre. \\
+	kem si li trr-ay-sre \\
+	Handlung \I{aux} bereits Tag-\I{fut}-vor \\
+	\trans{Erledige das bis spätestens morgen.}
+\end{interlin}
+
+\noindent Wenn \N{sre} vor dem Substantiv steht, verbindet es sich mit \N{li} zu \N{\ACC{li}sre}, das wie \N{sre} lenisiert:\index{lisre@\textbf{lisre}}
+
+\begin{interlin}
+	\glll \Npawl{}Kem si lisre srray. \\
+	kem si li-sre trr-ay \\
+	Handlung \I{aux} bereits.vor Tag-\I{fut} \\
+	\trans{Erledige das bis spätestens morgen.}
+\end{interlin}
 
 \subsection{Nìwotx} Das Adverb \N{nìwotx} \E{alle(samt), ganz, im Ganzen} wird häufig mit Substantiven und Pronomen im Plural verwendet, um einen kollektiven Sinn zu vermitteln:
 
 \begin{interlin}
-	\glll Aysutel nìwotx new tìlayrot. \\
-	ay-tute-l nìwotx new tìlayro-t \\
-	\I{pl}-Person-\I{agt} alle wollen Freiheit-\I{pat} \\
-	\trans{Alle Personen wollen Freiheit.} \Ipawl{}
+	\glll \Npawl{}Aysutel \uwave{nìwotx} new tìlayrot. \\
+	ay-tute-l nì-wotx new tì-layro-t \\
+	\I{pl}-Person-\I{agt} \I{advz}-Gänze wollen \I{nmlz}-frei-\I{pat} \\
+	\trans{\uwave{Alle} wollen Freiheit.}
 \end{interlin}
 
-\begin{quotation}
-\noindent\Npawl{ayeylanur oeyä sì eylanur lì'fyayä leNa'vi \uwave{nìwotx}}\\ 
-\indent\E{an \uwave{alle} meine Freunde und Freunde der Sprache der Na'vi}\\ 
-\Npawl{Tìfyawìntxuri oeyä perey aynga \uwave{nìwotx}.}\\ 
-\indent\E{Ihr wartet \uwave{allesamt} auf meine Anleitung}.
-\index{nìwotx@\textbf{nìwotx}}
-\end{quotation}
-\subsubsection{„Beide“} Mit dem Dual bedeutet \N{nìwotx} \E{beide}:
+\begin{interlin}
+	\glll \Npawl{}ayeylanur oeyä sì eylanur lì'fyayä leNa'vi \uwave{nìwotx} \\
+	ay-'eylan-ur oe-yä sì ay-'eylan-ur lì'fya-yä le-Na'vi nì-wotx \\
+	\I{pl}-Freund-\I{dat} \I{1sg-gen} und \I{pl}-Freund-\I{dat} Sprache-\I{gen} \I{adjz}-Na'vi \I{advz}-Gänze \\
+	\trans{an \uwave{alle} meine Freunde und Freunde der Sprache der Na'vi}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Tìfyawìntxuri oeyä perey aynga \uwave{nìwotx}. \\
+	tì-fyawìntxu-ri oe-yä p\INF{er}ey ay-nga nì-wotx \\
+	\I{nmlz}-anleiten-\I{top} \I{1sg-gen} warten\I{\INF{ipfv}} \I{pl-2sg} \I{advz}-Gänze \\
+	\trans{Ihr wartet \uwave{allesamt} auf meine Anleitung.}
+\end{interlin}
+
+\subsubsection{„Beide“} Mit dem Dual bedeutet \N{nìwotx} \E{beide}:\index{nìwotx@\textbf{nìwotx}!mit Dual}\index{beide}
 
 \begin{interlin}
 	\glll Mefo nìwotx yolom. \\
-	me-po nìwotx y\INF{ol}om \\
-	\I{dual}-\I{3p} alle \I{\INF{pfv}}essen \\
+	me-po nì-wotx y\INF{ol}om \\
+	\I{du-3sg} \I{advz}-Gänze essen\I{\INF{pfv}} \\
 	\trans{Sie haben beide gegessen.}
 \end{interlin}
-\index{nìwotx@\textbf{nìwotx}!mit Dual}\index{beide}
 \NTeri{15/8/2011}{https://naviteri.org/2011/08/new-vocabulary-clothing/}
 
 \subsection{Nìfya'o} Eine Nominalphrase, die \N{fya'o} beinhaltet, kann frei verwendet werden, um Adverbien der Art und Weise zu bilden.
-Bei dieser Konstruktion wird die gesamte Nominalphrase adverbialisiert, nicht nur das Wort, das mit \N{nì-} präfigiert ist, \N{nì-[fya'o letrrtrr]} \E{auf gewöhnliche Art und Weise}, \Npawl{poe poltxe nìfya'o alaw} \E{Sie sprach deutlich}.
-\index{nìfya'o@\textbf{nìfya'o}}\label{syn:nifyao}
+Bei dieser Konstruktion wird die gesamte Nominalphrase adverbialisiert, nicht nur das Wort, das mit \N{nì-} präfigiert ist:\index{nìfya'o@\textbf{nìfya'o}}\label{syn:nifyao}
 
-\subsubsection{} \N{Nìfya'o} kann auch einen Relativsatz annehmen, \Npawl{nìfya'o a hek} \E{auf seltsame Art und Weise}.
+\begin{interlin}
+	\glll \Npawl{}Poe poltxe nìfya'o alaw. \\
+	po-e p\INF{ol}lltxe nì-fya'o a-law \\
+	\I{3sg-f} sprechen\I{\INF{pfv}} \I{advz}-Art.und.Weise \I{lig}-deutlich \\
+	\trans{Sie sprach deutlich.}
+\end{interlin}
+
+\subsubsection{} \N{Nìfya'o} kann auch einen Relativsatz annehmen: 
+
+\begin{interlin}
+	\glll \Npawl{}nìfya'o a hek \\
+	nì-fya'o a hek \\
+	\I{advz}-Art.und.Weise \I{rel} seltsam \\
+	\trans{auf seltsame Art und Weise}
+\end{interlin}
 
 \subsubsection{} \QUAESTIO{Satzadverbien vs. \N{nìfya'o}-Formen?}
 
-\subsection{Kop und nìteng} Sowohl \N{kop} als auch \N{nìteng} entsprechen dem deutschen Adverb \E{auch, ebenfalls}. \N{Kop} meint aber eher \E{darüber hinaus, zusätzlich}, während \N{nìteng} \E{in gleicher Weise} bedeutet. Man vergleiche \N{oel poleng kop poru tsa'ut} \E{Darüber hinaus habe ich ihm das gesagt} mit \N{oel poleng nìteng poru tsa'ut} \E{Das habe ich ihm ebenfalls gesagt}.
-\index{kop@\textbf{kop}}
+\subsection{Kop und nìteng} Sowohl \N{kop} als auch \N{nìteng} entsprechen dem deutschen Adverb \E{auch, ebenfalls}. \N{Kop} meint aber eher \E{darüber hinaus, zusätzlich, zudem}, während \N{nìteng} \E{in gleicher Weise, ebenfalls, ebenso} bedeutet. Man vergleiche die folgenden Beispiele:\index{kop@\textbf{kop}}
 \index{nìteng@\textbf{nìteng}}
 
-\subsubsection{} Sie können auch zusammen verwendet werden, \Npawl{furia nga lu nitram, lu oe kop nitram nìteng} \E{Da du glücklich bist, bin auch ich ebenso glücklich}.
+\begin{interlin}
+	\glll Oel poleng kop poru tsa'ut. \\
+	oe-l p\INF{ol}eng kop po-ru tsa-'u-t \\
+	\I{1sg-agt} sagen\I{\INF{pfv}} zudem \I{3sg-dat} \I{dem.dis}-Sache-\I{pat} \\
+	\trans{Zudem habe ich ihm das gesagt.}
+\end{interlin}
+
+\begin{interlin}
+	\glll Oel poleng nìteng poru tsa'ut. \\
+	oe-l p\INF{ol}eng nì-teng po-ru tsa-'u-t \\
+	\I{1sg-agt} sagen\I{\INF{pfv}} \I{advz}-gleich \I{3sg-dat} \I{dem.dis}-Sache-\I{pat} \\
+	\trans{Das habe ich ihm ebenfalls gesagt.}
+\end{interlin}
+
+\subsubsection{} Sie können auch zusammen verwendet werden:
+
+\begin{interlin}
+	\glll \Npawl{}Furia nga lu nitram, lu oe kop nitram nìteng. \\
+	fì-'u-ri-a nga lu nitram lu oe kop nitram nìteng \\
+	\I{dem.prox}-Sache-\I{top-rel} \I{2sg} sein glücklich sein \I{1sg} zudem glücklich \I{advz}-gleich \\
+	\trans{Da du glücklich bist, bin auch ich ebenso glücklich.}
+\end{interlin}
+
 % https://naviteri.org/2011/05/weather-part-2-and-a-bit-more-2/comment-page-1/\#comment-779
 
-\subsection{Sunkesun} Das Adverb \N{\ACC{sun}kesun} \E{ob es dir gefällt oder nicht} ist eine verkürzte Form von \N{sunu ke sunu} mit dem Standardadressaten in der zweiten Person, \Npawl{sunkesun po slayu olo'eyktan} \E{Ob es dir gefällt oder nicht, er wird Stammesanführer werden.}
-\index{sunkesun@\textbf{sunkesun}}
+\subsection{Sunkesun} Das Adverb \N{\ACC{sun}kesun} \E{ob es dir gefällt oder nicht} ist eine verkürzte Form von \N{sunu ke sunu} mit dem Standardadressaten in der zweiten Person:\index{sunkesun@\textbf{sunkesun}}
+
+\begin{interlin}
+	\glll \Npawl{}Sunkesun po slayu olo'eyktan. \\
+	sunu-ke-sunu po sl\INF{ay}u olo'eyktan \\
+	gefallen-\I{neg}-gefallen \I{3sg} werden\I{\INF{fut}} Clanführer \\
+	\trans{Ob es dir gefällt oder nicht, er wird Clanführer werden.}
+\end{interlin}
 \NTeri{6/6/2019}{https://naviteri.org/2019/06/50a-liu-amip-40-new-words/}
 
-\subsubsection{} Man beachte, dass \N{sunkesun} nur direkt an den Hörer gerichtet werden kann, ansonsten muss eine \N{ftxey ... fuke}-Konstruktion verwendet werden, \Npawl{pol vìyewng ayevengit fìha'ngir, ftxey sunu fuke} \E{Er wird sich heute Nachmittag um die Kinder kümmern, ob er will oder nicht.}
+\subsubsection{} Man beachte, dass \N{sunkesun} nur direkt an den Hörer gerichtet werden kann, ansonsten muss eine \N{ftxey ... fuke}-Konstruktion verwendet werden:
+
+\begin{interlin}
+	\glll \Npawl{}Pol vìyewng ayevengit fìha'ngir, ftxey sunu fuke. \\
+	po-l v\INF{ìy}ewng ay-'eveng-it fì-ha'ngir ftxey sunu fu-ke \\
+	\I{3sg-agt} kümmern.um\I{\INF{prox.fut}} \I{pl}-Kind-\I{pat} \I{dem.prox}-Nachmittag ob gefallen oder-\I{neg} \\
+	\trans{Er wird sich heute Nachmittag um die Kinder kümmern, ob er will oder nicht.}
+\end{interlin}
 
 \section{Aspekt und Tempus}
 
 \subsection{Die Rolle des Kontexts} Na'vi-Verben sind häufig nicht mit Aspekt oder Tempus markiert, sodass ein Verb ohne Infixe oder höchstens mit dem Subjunktivinfix \N{\INF{iv}} steht. Ohne neue Information, wie z. B. ein Zeitadverb oder ein Umbruch im Diskurs, setzt ein unmarkiertes Verb die Zeitform und / oder den Aspekt des Verbs im vorherigen Satz fort.\index{Verb!unmarkiert}
 
-\subsubsection{} Zwar kann ein Nebensatz seinem Hauptsatz vorausgehen, er bezieht jedoch seinen Kontext hinsichtlich Tempus und Aspekt stets aus dem Hauptsatz, \Npawl{oel foru fìaylì'ut \uwave{tolìng} a krr, kxawm oe \uwave{harmahängaw}} \E{Als ich ihm diese Worte \uwave{gesagt habe}, muss ich \uwave{geschlafen haben}}, \Npawl{tì'eyngit oel \uwave{tolel} a krr, ayngaru \uwave{payeng}} \E{Wenn ich eine Antwort \uwave{erhalten habe}, \uwave{werde} ich es dich \uwave{wissen lassen}.}
+\subsubsection{} Zwar kann ein Nebensatz seinem Hauptsatz vorausgehen, er bezieht jedoch seinen Kontext hinsichtlich Tempus und Aspekt stets aus dem Hauptsatz:
 
-\subsection{Das unmarkierte Verb} Die hinsichtlich Tempus und Aspekt unmarkierte Verbform hat zwei zusätzliche Funktionen: Erstens kann sie das Präsens anzeigen, \Npawl{ayngaru seiyi irayo} \E{Ich danke euch}; zweitens wird sie für Handlungen, die regelmäßig oder gewohnheitsmäßig stattfinden sowie für allgemeine Aussagen verwendet, \Npawl{nga za'u fìtseng pxìm srak?} \E{Kommst du oft hierher?}, \N{lu fo lehrrap} \E{Sie sind gefährlich}.
-\index{Verb!Präsens}\index{Verb!unmarkiert}
+\begin{interlin}
+	\glll \Npawl{}Oel foru fìaylì'ut \uwave{tolìng} a krr, kxawm oe \uwave{harmahängaw}. \\
+	oe-l ay-po-ru fì-ay-lì'u-t t\INF{ol}ìng a krr kxawm oe h\INF{arm}ah\INF{äng}aw \\
+	\I{1sg-agt} \I{pl-3sg-dat} \I{dem.prox-pl}-Wort-\I{pat} geben\INF{\I{pfv}} \I{rel} Zeit vielleicht \I{1sg} schlafen\INF{\I{ipfv-pst}}\INF{\I{neg.aff}} \\
+	\trans{Als ich ihnen diese Worte \uwave{sagte}, \uwave{schlief} ich wohl gerade.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Tì'eyngit oel \uwave{tolel} a krr, ayngaru \uwave{payeng}. \\
+	tì-'eyng-it oe-l t\INF{ol}el a krr ay-nga-ru p\INF{ay}eng \\
+	\I{nmlz}-antworten-\I{pat} \I{1sg-agt} erhalten\I{\INF{pfv}} \I{rel} Zeit \I{pl-2sg-dat} sagen\I{\INF{fut}} \\
+	\trans{Sobald ich eine Antwort \uwave{erhalten habe}, \uwave{werde} ich es euch \uwave{wissen lassen}.}
+\end{interlin}
+
+\subsection{Das unmarkierte Verb} Die hinsichtlich Tempus und Aspekt unmarkierte Verbform hat zwei zusätzliche Funktionen. Erstens kann sie das Präsens anzeigen:\index{Verb!Präsens}\index{Verb!unmarkiert}
+
+\begin{interlin}
+	\glll \Npawl{}Ayngaru seiyi irayo. \\
+	ay-nga-ru s\INF{ei}i irayo \\
+	\I{pl-2sg-dat} \I{aux\INF{pos.aff}} Dank \\
+	\trans{Ich danke euch.}
+\end{interlin}
+
+\noindent Zweitens wird sie für Handlungen, die regelmäßig oder gewohnheitsmäßig stattfinden, sowie für allgemeine Aussagen verwendet:
+
+\begin{interlin}
+	\glll \Npawl{}Nga za'u fìtseng pxìm srak? \\
+	nga za'u fì-tseng pxìm srak \\
+	\I{2sg} kommen \I{dem.prox}-Ort oft \I{pq} \\
+	\trans{Kommst du oft hierher?}
+\end{interlin}
+
+\begin{interlin}
+	\glll Lu fo lehrrap. \\
+	lu ay-po le-hrrap \\
+	sein \I{pl-3sg} \I{adjz}-Gefahr \\
+	\trans{Sie sind gefährlich.}
+\end{interlin}
 
 \subsection{Aspekt} Im Allgemeinen wird im Na'vi der Aspekt gegenüber der Zeitform bevorzugt markiert.\footnote{Die Verbkategorie ,Aspekt‘ kann für Sprecher des Deutschen und vieler anderer europäischer Sprachen ungewohnt sein, da diese in ihren Verbformen Tempus und Aspekt oft vermischen, was es schwierig macht, die beiden Begriffe zu unterscheiden. Während das Tempus den Zeitpunkt einer Handlung relativ zum Zeitpunkt der Aussage verortet (d. h. in der Vergangenheit, Gegenwart oder Zukunft), drückt der Aspekt aus, wie sich die Handlung relativ zum betrachteten Zeitraum erstreckt (ob dieser in der Vergangenheit, Gegenwart oder Zukunft liegt, ist dabei irrelevant), und gibt z. B. an, ob die Handlung im betrachteten Zeitraum abgeschlossen wird oder nicht, ob sie darin einmalig, wiederholt oder gewöhnlich stattfindet, etc. (\href{https://de.wikipedia.org/wiki/Aspekt_(Linguistik)}{vgl. Wikipedia: Aspekt}). Ein deutsches Beispiel zur Verdeutlichung:
 	\begin{quotation}
 		\noindent  1. Ich kaufte im Laden ein  (perfektiv).\\
 		2.  Als ich im Laden einkaufte (imperfektiv), sah ich etwas ganz Erstaunliches (perfektiv).
 	\end{quotation}
-	In beiden Sätzen liegt die Handlung des Einkaufens in der Vergangenheit (d. h. das Tempus ist dasselbe), aber im zweiten Satz wird sie im Verlauf, d. h. unabgeschlossen (imperfektiv) geschildert und bildet damit den Hintergrund für die folgende Aussage, die abgeschlossen (perfektiv) bzw. punktuell ist.} Es ist hilfreich, sich das Perfekt als eine Momentaufnahme eines Ereignisses vorzustellen, während das Imperfekt den Hintergrund etabliert, \Npawl{tengkrr palulukan moene kxll \uwave{sarmi}, \uwave{poltxe} Neytiril aylì'ut a frakrr 'ok seyä layu oer} \E{Als der Thanator auf uns beide \uwave{zustürmte}, \uwave{sagte} Neytiri etwas, an das ich mich immer erinnern werde.}
+	In beiden Sätzen liegt die Handlung des Einkaufens in der Vergangenheit (d. h. das Tempus ist dasselbe), aber im zweiten Satz wird sie im Verlauf, d. h. unabgeschlossen (imperfektiv) geschildert und bildet damit den Hintergrund für die folgende Aussage, die abgeschlossen (perfektiv) bzw. punktuell ist.} Es ist hilfreich, sich das Perfekt als eine Momentaufnahme eines Ereignisses vorzustellen, während das Imperfekt den Hintergrund etabliert:
+	
+	\begin{interlin}
+		\glll \Npawl{}Tengkrr palulukan moene kxll \uwave{sarmi}, \uwave{poltxe} Neytiril aylì'ut a frakrr 'ok seyä layu oer. \\
+		tengkrr palulukan me-oe-ne kxll s\INF{arm}i p\INF{ol}lltxe Neytiri-l ay-lì'u-t a fra-krr 'ok ay-tsa-'u-ä l\INF{ay}u oe-r \\
+		während Thanator \I{du-1sg}-zu Ansturm \I{aux\INF{ipfv-pst}} sagen\I{\INF{pfv}} Neytiri-\I{agt} \I{pl}-Wort-\I{pat} \I{rel} alles-Zeit Erinnerung \I{pl-dem.dis}-Sache-\I{gen} sein\I{\INF{fut}} \I{1sg-dat} \\
+		\trans{Als der Thanator auf uns beide \uwave{zustürmte}, \uwave{sagte} Neytiri etwas, an das ich mich immer erinnern werde.}
+	\end{interlin}
 
-\subsection{Gleichzeitigkeit} Da das Imperfekt einen fortlaufenden Zustand beschreibt, kann es in komplexen Sätzen verwendet werden, um die Gleichzeitigkeit von Handlungen anzuzeigen, \Npawl{fì-txon yom tengkrr \uwave{teruvon}} \E{Diese Nacht essen wir, während wir uns anlehnen}.
-\index{Imperfekt!für Gleichzeitigkeit}
+\subsection{Gleichzeitigkeit} Da das Imperfekt einen fortlaufenden Zustand beschreibt, kann es in komplexen Sätzen verwendet werden, um die Gleichzeitigkeit von Handlungen anzuzeigen:\index{Imperfekt!für Gleichzeitigkeit}
+
+\begin{interlin}
+	\glll \Npawl{}Fìtxon yom tengkrr \uwave{teruvon}. \\
+	fì-txon yom tengkrr t\INF{er}uvon \\
+	\I{dem.prox}-Nacht essen während anlehnen\I{\INF{ipfv}} \\
+	\trans{Heute Nacht essen wir, während wir uns anlehnen.}
+\end{interlin}
 \LNWiki{14/3/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/March-June\%23A_Collection}
 
-\subsection{Vorzeitigkeit} In komplexen Sätzen kann das Perfekt in einem Nebensatz den Abschluss einer Handlung vor dem Ereignis im Hauptsatz anzeigen: \index{Perfekt!für Vorzeitigkeit}
+\subsection{Vorzeitigkeit} In komplexen Sätzen kann das Perfekt in einem Nebensatz den Abschluss einer Handlung vor dem Ereignis im Hauptsatz anzeigen:\index{Perfekt!für Vorzeitigkeit}
 
-\begin{quotation}
-	\noindent\Npawl{Tì'eyngit oel \uwave{tolel} a krr, ayngaru payeng}.\\
-	\indent\E{Wenn ich eine Antwort \uwave{erhalten habe}, werde ich es euch wissen lassen}.\\
-	\noindent\Npawl{Fori mawkrra fa renten \uwave{ioi säpoli} holum}.\\
-	\indent\E{Nachdem sie ihre Brillen \uwave{aufgesetzt hatten}, gingen sie weg.}
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}Tì'eyngit oel \uwave{tolel} a krr, ayngaru payeng. \\
+	tì-'eyng-it oe-l t\INF{ol}el a krr ay-nga-ru p\INF{ay}eng \\
+	\I{nmlz}-antworten-\I{pat} \I{1sg-agt} erhalten\I{\INF{pfv}} \I{rel} Zeit \I{pl-2sg-dat} sagen\I{\INF{fut}} \\
+	\trans{Sobald ich eine Antwort \uwave{erhalten habe}, werde ich es euch wissen lassen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Fori mawkrra fa renten \uwave{ioi} \uwave{säpoli} holum. \\
+	ay-po-ri mawkrr-a fa renten ioi s\INF{äp}\INF{ol}i h\INF{ol}um \\
+	\I{pl-3sg-top} nach-\I{lig} mittels Brille Schmuck \I{aux\INF{refl}\INF{pfv}} weggehen\INF{\I{pfv}} \\
+	\trans{Nachdem sie ihre Brillen \uwave{aufgesetzt hatten}, gingen sie weg.}
+\end{interlin}
 
 \subsection{Punktuelles Perfekt} Das Perfekt wird in mehreren Ausdrücken verwendet, um anzuzeigen, dass das Ereignis in einem Augenblick (punktuell) eingetreten ist, \N{tslolam} \E{Verstanden!,}, \N{rolun} \E{Gefunden!}. Frommer sagt, \N{tolel}, \E{(Ich) hab's!}, stehe für einen ,Geistesblitz‘.
 \index{Perfekt!für Punktualität}
@@ -882,24 +1648,38 @@ Bei dieser Konstruktion wird die gesamte Nominalphrase adverbialisiert, nicht nu
 \index{Zukunft!nah!mit \textbf{ye'rìn}}
 \index{ye'rìn@\textbf{ye'rìn}!mit naher Zukunft}
 
-\subsection{Absicht} Die beiden Infixe, die eine auf die Zukunft ausgerichtete Absicht\footnote{\href{https://de.wikipedia.org/wiki/Energikus}{Vgl. Wikipedia: Energikus}} markieren -- \N{\INF{ìsy}} und \N{\INF{asy}} -- zeigen eher die Entschlossenheit des Sprechers an, einen Zustand herbeizuführen, als eine Vorhersage über die Zukunft, \Npawl{\uwave{pìsyeng} oe ngar} \E{Ich werde es dir erzählen}, \Npawl{tafral ke \uwave{lìsyek} oel ngeyä keye'ungit} \E{Daher werde ich deinem Irrsinn keine Beachtung schenken}.
+\subsection{Absicht} Die beiden Infixe, die eine auf die Zukunft ausgerichtete Absicht\footnote{\href{https://de.wikipedia.org/wiki/Energikus}{Vgl. Wikipedia: Energikus}} markieren -- \N{\INF{ìsy}} und \N{\INF{asy}} -- zeigen eher die Entschlossenheit des Sprechers an, einen Zustand herbeizuführen, als eine Vorhersage über die Zukunft: 
 
-Bei Negation drücken die beiden Infixe die Absicht aus, dass etwas nicht passiert (und nicht etwa, nicht die Absicht zu haben, dass etwas passiert):
+\begin{interlin}
+	\glll \Npawl{}\uwave{Pìsyeng} oe ngar. \\
+	p\INF{ìsy}eng oe nga-r \\
+	erzählen\I{\INF{int.prox.fut}} \I{1sg} \I{2sg-dat} \\
+	\trans{Ich werde es dir erzählen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Tafral ke \uwave{lìsyek} oel ngeyä keye'ungit. \\
+	tafral ke l\INF{ìsy}ek oe-l nga-yä keye'ung-it \\
+	daher \I{neg} beachten\I{\INF{int.prox.fut}} \I{1sg-agt} \I{2sg-gen} Irrsinn-\I{pat} \\
+	\trans{Daher werde ich deinen Irrsinn nicht beachten.}
+\end{interlin}
+
+\noindent Bei Negation drücken die beiden Infixe die Absicht aus, dass etwas nicht passiert (und nicht etwa, nicht die Absicht zu haben, dass etwas passiert):
 
 \begin{interlin}
 	\glll Ayoe ke wasyem. \\
 	ay-oe ke w\INF{asy}em \\
-	\I{pl}-\I{1} nicht kämpfen\INF{\I{int.fut}} \\
+	\I{pl-1sg} nicht kämpfen\INF{\I{int.fut}} \\
 	\trans{Wir werden nicht kämpfen}, i. S. v. \E{,Ich beabsichtige, dass wir nicht kämpfen.‘}
 \end{interlin}
 
 \noindent Aufgrund dieser spezifischen Bedeutung wird das intentionale Futur ausschließlich mit der ersten Person verwendet. Man beachte aber dieses Beispiel:
 
 \begin{interlin}
-	\glll Ke zasyup lì'Ona ne kxutu a mìfa fu a wrrpa. \\
+	\glll \Npawl{}Ke zasyup lì'Ona ne kxutu a mìfa fu a wrrpa. \\
 	ke z\INF{asy}up lì'Ona ne kxutu a mìfa fu a wrrpa \\
-	nicht fallen\INF{\I{int.fut}} lì'Ona zu Feind \I{rel} innen oder \I{rel} außen\\
-	\trans{Die lì'Ona werden weder am äußeren noch am inneren Feind zugrunde gehen.} \Ipawl{}
+	\I{neg} fallen\INF{\I{int.fut}} lì'Ona zu Feind \I{rel} innen oder \I{rel} außen\\
+	\trans{Die lì'Ona werden weder am äußeren noch am inneren Feind zugrunde gehen.}
 \end{interlin}
 
 \noindent Hier verwendet der Sprecher den Begriff \N{lì'Ona}, um auf seine Zugehörigkeit zu einer Gruppe zu verweisen -- er ersetzt nicht ganz, aber hinreichend ein Pronomen der ersten Person, um mit intentionalem Futur stehen zu können. \LNWiki{29/3/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/March-June\%23Intentional_Future_Details} \LNForum{22/12/2024}{https://forum.learnnavi.org/index.php?msg=708660} \label{syn:verb:intenfut}
@@ -909,28 +1689,82 @@ Bei Negation drücken die beiden Infixe die Absicht aus, dass etwas nicht passie
 \index{Subjunktiv}
 \noindent Der Subjunktiv wird im Na'vi sehr häufig gebraucht. Außerhalb seiner Verwendung in unabhängigen Sätzen ist er in bestimmten grammatikalischen Konstruktionen zwingend erforderlich, ohne dabei notwendigerweise auf einen \textit{modus irrealis} hinzudeuten.
 
-\subsection{Optativ} Der Subjunktiv wird verwendet, um einen Wunsch zu äußern, \Npawl{oeyä swizaw nìngay tivakuk} \E{Lass meinen Pfeil sein Ziel sicher treffen}. \index{Subjunktiv!Optativ}
+\subsection{Optativ} Der Subjunktiv wird verwendet, um einen Wunsch zu äußern:\index{Subjunktiv!Optativ}
 
-\subsection{Nìrangal} Unerfüllbare Wünsche werden mit dem Adverb \N{nìrangal} und dem Subjunktiv Imperfekt für einen Wunsch in der Gegenwart bzw. dem Subjunktiv Perfekt für einen Wunsch in der Vergangenheit formuliert. Dem entspricht im Deutschen ,wenn (doch) nur‘ oder ,ich wünschte, (dass)‘, \N{nìrangal \uwave{lirvu} oeyä frrnenur lora sanhì} \E{Ich wünschte, meine Kinder hätten schöne biolumineszente Punkte}, \N{nìrangal oel \uwave{tslilvam} nì'ul} \E{Wenn ich doch nur mehr verstanden hätte}.\\
-\index{nìrangal@\textbf{nìrangal}}\LNWiki{14/3/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/March-June\%23A_Collection}
+\begin{interlin}
+	\glll \Npawl{}Oeyä swizaw nìngay \uwave{tivakuk}. \\
+	oe-yä swizaw nì-ngay t\INF{iv}akuk \\
+	\I{1sg-gen} Pfeil \I{advz}-wahr treffen\I{\INF{subj}} \\
+	\trans{\uwave{Möge} mein Pfeil sicher treffen.}
+\end{interlin}
+
+\subsection{Nìrangal} Unerfüllbare Wünsche werden mit dem Adverb \N{nìrangal} und dem Subjunktiv Imperfekt für einen Wunsch in der Gegenwart bzw. dem Subjunktiv Perfekt für einen Wunsch in der Vergangenheit formuliert. Dem entspricht im Deutschen ,wenn (doch) nur‘ oder ,ich wünschte, (dass)‘:\index{nìrangal@\textbf{nìrangal}} 
+
+\begin{interlin}
+	\glll Nìrangal \uwave{lirvu} oeyä frrnenur lora sanhì. \\
+	nì-rangal l\INF{irv}u oe-yä ay-prrnen-ur lor-a ay-tanhì  \\
+	\I{advz}-wünschen sein\I{\INF{ipfv-subj}} \I{1sg-gen} \I{pl}-Baby-\I{dat} schön-\I{lig} \I{pl}-Leuchtpunkt \\
+	\trans{Ich wünschte, meine Kinder \uwave{hätten} schöne Leuchtpunkte.}
+\end{interlin}
+
+\begin{interlin}
+	\glll Nìrangal oel \uwave{tslilvam} nì'ul. \\
+	nì-rangal oe-l tsl\INF{ilv}am nì-'ul  \\
+	\I{advz}-wünschen \I{1sg-agt} verstehen\I{\INF{pfv-subj}} \I{advz}-zunehmen \\
+	\trans{Wenn ich doch mehr \uwave{verstanden hätte}.}
+\end{interlin}
+\LNWiki{14/3/2010}{https://wiki.learnnavi.org/index.php/Canon/2010/March-June\%23A_Collection}
 
 \subsection{Modalverbkonstruktionen} \index{Modalverb}
-Ein Vollverb, das zu einem Modalverb -- wie \N{zene} \E{müssen}, \N{tsun} \E{können}, usw. -- gehört, steht im Subjunktiv, wie in \N{ayngari zene hivum} \E{Ihr müsst gehen}, \Npawl{oe new nìtxan ayngaru fyawivìntxu} \E{Ich möchte euch sehr gerne führen}, \Npawl{fmawn a tsun oe ayngaru tivìng} \E{Neuigkeiten, die ich euch geben kann}. \label{syn:modals}
+Ein Vollverb, das zu einem Modalverb -- wie \N{zene} \E{müssen}, \N{tsun} \E{können}, usw. -- gehört, steht im Subjunktiv:\label{syn:modals}
+
+\begin{interlin}
+	\glll Ayngari zene \uwave{hivum}. \\
+	ay-nga-ri zene h\INF{iv}um  \\
+	\I{pl-2sg-top} müssen weggehen\I{\INF{subj}} \\
+	\trans{Ihr müsst gehen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Oe new nìtxan ayngaru \uwave{fyawivìntxu}. \\
+	oe new nì-txan ay-nga-ru fyaw\INF{iv}ìntxu \\
+	\I{1sg} wollen \I{advz}-viel \I{pl-2sg-dat} führen\I{\INF{subj}} \\
+	\trans{Ich möchte euch sehr gerne führen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}sìltsana fmawn a tsun oe ayngaru \uwave{tivìng} \\
+	sìltsan-a fmawn a tsun oe ay-nga-ru t\INF{iv}ìng \\
+	gut-\I{lig} Nachricht \I{rel} können \I{1sg} \I{pl-2sg-dat} geben\I{\INF{subj}} \\
+	\trans{gute Nachrichten, die ich euch geben kann}
+\end{interlin}
 
 \subsubsection{} \label{syn:modal-syntax} Das vom Modalverb kontrollierte Vollverb kann nur die Infixe erhalten, die der Vor-Position zugeordnet sind (d. h. Reflexiv und Kausativ, \horenref{morph:pre-first}), und das Infix für den Subjunktiv. Es erhält keine Zeit-, Aspekt- oder Affektinfixe. Mit diesen wird stattdessen das Modalverb markiert, \N{oe namew tsive'a} \E{Ich wollte sehen}, niemals \N{*oe new tsimve'a}.
 \LNForum{14/10/2010}{https://forum.learnnavi.org/index.php?msg=332239}
 
-\begin{quotation}
-	\noindent\Npawl{Pori mesyokx rìkxi, ha ke \uwave{tsayun} yerikit \uwave{tivakuk}.}\\
-	\indent\E{Seine Hände zittern, deshalb wird er den Hexapeden nicht treffen können.}\\
-	\noindent\Npawl{Furia \uwave{tsolun} oe ngahu \uwave{pivängkxo}, oeru prrte' lu nìngay.}\\
-	\indent\E{Es war mir eine Freude, mit dir zu sprechen}.\\
-	\noindent\Npawl{Fteria oel lì'fyati leNa'vi, slä mi ke \uwave{tsängun pivlltxe} na hufwe.}\\
-	\indent\E{Ich lerne Na’vi, aber ich fürchte, ich kann es noch immer nicht fließend sprechen.}
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}Pori mesyokx rìkxi, ha ke \uwave{tsayun} yerikit \uwave{tivakuk}. \\
+	po-ri me-tsyokx rìkxi ha ke ts\INF{ay}un yerik-it t\INF{iv}akuk \\
+	\I{3sg-top} \I{du}-Hand zittern daher \I{neg} können\I{\INF{fut}} Hexapede-\I{pat} treffen\I{\INF{subj}} \\
+	\trans{Seine Hände zittern, daher wird er den Hexapeden nicht treffen können.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Furia \uwave{tsolun} oe ngahu \uwave{pivängkxo}, oeru prrte' lu nìngay. \\
+	fì-'u-ri-a ts\INF{ol}un oe nga-hu p\INF{iv}ängkxo oe-ru prrte' lu nì-ngay \\
+	\I{dem.prox}-Sache-\I{top-rel} können\I{pfv} \I{1sg} \I{2sg}-mit sprechen\I{\INF{subj}} \I{1sg-dat} Freude sein \I{advz}-wahr \\
+	\trans{Es war mir wirklich eine Freude, mit dir zu sprechen.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Fteria oel lì'fyati leNa'vi, slä mi ke \uwave{tsängun} \uwave{pivlltxe} na hufwe. \\
+	ft\INF{er}ia oe-l lì'fya-ti le-Na'vi slä mi ke ts\INF{äng}un p\INF{iv}lltxe na hufwe \\
+	lernen\I{\INF{ipfv}} \I{1sg-agt} Sprache-\I{pat} \I{adjz}-Na'vi aber immer.noch \I{neg} können\I{\INF{neg.aff}} sprechen\I{\INF{subj}} wie Wind \\
+	\trans{Ich lerne Na'vi, aber ich fürchte, ich kann es immer noch nicht fließend sprechen.}
+\end{interlin}
 
 \noindent Außer in der Poesie oder zeremonieller Sprache steht das Modalverb im Satz immer vor dem kontrollierten Vollverb.
-\NTeri{3/19/2011}{https://naviteri.org/2011/03/word-order-and-case-marking-with-modals/}
+\NTeri{19/3/2011}{https://naviteri.org/2011/03/word-order-and-case-marking-with-modals/}
 
 \subsubsection{} Bekannte Modalverben und Verben mit modaler Struktur:\footnote{\QUAESTIO{Weitere Kandidaten: \N{flä} \E{gelingen}, \N{hawl} \E{vorbereiten}.}}
 % This is what I get for attaching several words to the same footnote.
@@ -971,42 +1805,102 @@ Ein Vollverb, das zu einem Modalverb -- wie \N{zene} \E{müssen}, \N{tsun} \E{k�
 \NTeri{6/6/2019}{https://naviteri.org/2019/06/50a-liu-amip-40-new-words\%ef\%bb\%bf/}
 \NTeri{23/12/2020}{https://naviteri.org/2020/12/mrra-tipangkxotsyip-five-little-discussions/}
 
-\subsubsection{} Man beachte, dass Modalverben als intransitiv gelten und damit das Subjekt in der Verbalphrase im Absolutiv steht, unabhängig von der Transitivität des kontrollierten Vollverbs, \N{\uwave{oe} new yivom teylut} \E{Ich möchte Teylu essen}. Siehe aber \horenref{pragma:word-order-effects:modals} für die Auswirkungen der Wortfolge darauf.
+\subsubsection{} Man beachte, dass Modalverben als intransitiv gelten und damit das Subjekt in der Verbalphrase im Absolutiv steht, unabhängig von der Transitivität des kontrollierten Vollverbs (siehe aber \horenref{pragma:word-order-effects:modals} für die Auswirkungen der Wortfolge darauf): 
 
-Wenn das Modalverb jedoch ein Objekt oder einen Objektsatz nehmen kann, verhält es sich transitiv, \Npawl{oel new futa nga srew} \E{Ich möchte, dass du tanzt} (\horenref{syn:modal:subclause}).
+\begin{interlin}
+	\glll \uwave{Oe} new yivom teylut. \\
+	oe new y\INF{iv}om teylu-t \\
+	\I{1sg} wollen essen\I{\INF{subj}} Käferlarve-\I{pat} \\
+	\trans{Ich möchte Käferlarven essen.}
+\end{interlin}
+
+\noindent Wenn das Modalverb jedoch ein Objekt oder einen Objektsatz nehmen kann, verhält es sich transitiv (siehe auch \horenref{syn:modal:subclause}): 
+
+\begin{interlin}
+	\glll \Npawl{}\uwave{Oel} new futa nga srew. \\
+	oe-l new fì-'u-t-a nga srew \\
+	\I{1sg-agt} wollen \I{dem.prox}-Sache-\I{pat-rel} \I{2sg} tanzen \\
+	\trans{Ich möchte, dass du tanzt.}
+\end{interlin}
 
 \subsubsection{}\label{syn:modal:neg}
-Wenn \N{ke} mit Modalverben verwendet wird, kann es entweder vor dem Modalverb oder vor dem kontrollierten Vollverb stehen. Manchmal ändert sich dadurch die Bedeutung, wie bei \Npawl{ke zene kivä} \E{nicht gehen müssen} vs. \N{zene ke kivä} \E{nicht gehen dürfen} oder \Npawl{po ke tsun yivom} \E{Sie sind nicht in der Lage, zu essen} vs. \Npawl{po tsun ke yivom} \E{Sie sind in der Lage, nicht zu essen}.
+Wenn \N{ke} mit Modalverben verwendet wird, kann es entweder vor dem Modalverb oder vor dem kontrollierten Vollverb stehen. Manchmal ändert sich dadurch die Bedeutung: 
+
+\begin{interlin}\label{syn:modal:neg:ex01}
+	\glll \Npawl{}Po ke tsun yivom. \\
+	po ke tsun y\INF{iv}om \\
+	\I{3sg} \I{neg} können essen\I{\INF{subj}} \\
+	\trans{Er ist nicht in der Lage, zu essen.}
+\end{interlin}
+
+\begin{interlin}\label{syn:modal:neg:ex02}
+	\glll \Npawl{}Po tsun ke yivom. \\
+	po tsun ke y\INF{iv}om \\
+	\I{3sg} können \I{neg} essen\I{\INF{subj}} \\
+	\trans{Er ist in der Lage, nicht zu essen.}
+\end{interlin}
+
+\noindent In Beispiel (\ref{syn:modal:neg:ex01}) wird das Modalverb verneint (d. h. die Fähigkeit zu essen); in Beispiel (\ref{syn:modal:neg:ex02}) das Vollverb (d. h. die Handlung des Essens). \\
+\indent Beim Modalverb \N{zene} \E{müssen} hat die Position von \N{ke} Auswirkungen auf dessen Bedeutung: \Npawl{ke zene kivä} \E{nicht gehen \uwave{müssen}} vs. \N{zene ke kivä} \E{nicht gehen \uwave{dürfen}}.
 \LNForum{23/7/2019}{https://forum.learnnavi.org/index.php?msg=665859}
 
 \subsection{Modalverben mit Nebensätzen}
 \label{syn:modal:new}\label{syn:modal:subclause}
-Einige Modalverben können Objektsätze annehmen, die mit \N{futa} oder \N{a fì'ut} (\horenref{morph:fwa-tsawa}) eingeleitet werden. Wenn das Subjekt des Modalverbs mit dem des kontrollierten Vollverbs identisch ist, ist es normalerweise nicht notwendig, aber möglich, eine der Konjunktionen zu verwenden:
+Einige Modalverben können Objektsätze annehmen, die mit \N{futa} oder \N{a fì'ut} (siehe \horenref{morph:fwa-tsawa}) eingeleitet werden. Wenn das Subjekt des Modalverbs mit dem des kontrollierten Vollverbs identisch ist, ist es normalerweise nicht notwendig, aber möglich, eine der Konjunktionen zu verwenden:
 
 \index{fmi@\textbf{fmi}!mit \N{futa}} \index{kan@\textbf{kan}!mit \N{futa}}
 \index{may'@\textbf{may'}!mit \N{futa}} \index{new@\textbf{new}!mit \N{futa}}
 \index{nulnew@\textbf{nulnew}!mit \N{futa}} \index{sto@\textbf{sto}!mit \N{futa}}
 
-\begin{quotation}
-	\noindent\Npawl{Oe new srivew}.  \E{Ich möchte tanzen.} \\
-	\noindent\Npawl{Oel new futa srew}.  \E{Ich möchte tanzen} (wörtl. \E{Ich möchte, dass ich tanze}).
-\end{quotation}
+\begin{interlin}
+	\glll \Npawl{}Oe new srivew. \\
+	oe new sr\INF{iv}ew \\
+	\I{1sg} wollen tanzen\I{\INF{subj}} \\
+	\trans{Ich möchte tanzen.}
+\end{interlin}
 
-\noindent Hier ist zu beachten, dass der Nebensatz nicht den Subjunktiv erfordert; analog zu dem sehr häufigen Muster in Sätzen wie \N{oe new srivew} ist es jedoch erlaubt, auch den Subjunktiv zu verwenden, \N{oel new futa srivew}. Dies gilt auch, wenn das Subjekt des Nebensatzes ein anderes ist als das des Hauptsatzes:
+\begin{interlin}\label{syn:modal:subclause:ex02}
+	\glll \Npawl{}Oe new futa srew. \\
+	oel new fì-'u-t-a srew \\
+	\I{1sg-agt} wollen \I{dem.prox}-Sache-\I{pat-rel} tanzen\\
+	\trans{Ich möchte tanzen.}
+\end{interlin}
 
-\begin{quotation}
-	\noindent\Npawl{Oel new futa nga srew}.  \E{Ich möchte, dass du tanzt.} \\
-	\noindent\Npawl{Oel new futa nga srivew}.  \E{Ich möchte, dass du tanzt.} \\
-	\noindent\N{Poel stolatso futa mefo tivaron tsaha'ngir.} \\
-	\indent\E{Sie muss abgelehnt haben, an jenem Nachmittag zu jagen.}
-\end{quotation}
-\noindent \LNForum{29/11/2020}{https://forum.learnnavi.org/index.php?msg=673724}
+\noindent In Beispiel (\ref{syn:modal:subclause:ex02}) ist zu beachten, dass der Nebensatz nicht den Subjunktiv erfordert; analog zu dem sehr häufigen Muster in Sätzen wie \N{oe new srivew} ist es jedoch erlaubt, auch den Subjunktiv zu verwenden, \N{oel new futa srivew}. Dies gilt auch, wenn das Subjekt des Nebensatzes ein anderes ist als das des Hauptsatzes:
+
+\begin{interlin}
+	\glll \Npawl{}Oel new futa nga srew. \\
+	oel new fì-'u-t-a nga srew \\
+	\I{1sg-agt} wollen \I{dem.prox}-Sache-\I{pat-rel} \I{2sg} tanzen \\
+	\trans{Ich möchte, dass du tanzt.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Oel new futa nga \uwave{srivew}. \\
+	oel new fì-'u-t-a nga sr\INF{iv}ew \\
+	\I{1sg-agt} wollen \I{dem.prox}-Sache-\I{pat-rel} \I{2sg} tanzen\I{\INF{subj}} \\
+	\trans{Ich möchte, dass du tanzt.}
+\end{interlin}
+
+\begin{interlin}
+	\glll \Npawl{}Poel stolatso futa mefo \uwave{tivaron} tsaha'ngir. \\
+	po-e-l st\INF{ol}\INF{ats}o fì-'u-t-a me-po t\INF{iv}aron tsa-ha'ngir \\
+	\I{3sg-f-agt} ablehnen\I{\INF{pfv}\INF{infer}} \I{dem.prox}-Sache-\I{pat-rel} \I{du-3sg} jagen\I{\INF{subj}} \I{dem.dis}-Nachmittag \\
+	\trans{Sie muss abgelehnt haben, dass die beiden an jenem Nachmittag jagen.}
+\end{interlin}
+ \LNForum{29/11/2020}{https://forum.learnnavi.org/index.php?msg=673724}
 \LNForum{13/12/2012}{https://forum.learnnavi.org/index.php?msg=567034}
 
-\noindent Die Verben, die diese Variation im Nebensatz erlauben, sind \N{fmi, kan, may', new, nulnew} and \N{sto}.
+\noindent Die Verben, die diese Variation im Nebensatz erlauben, sind \N{fmi, kan, may', new, nulnew} und \N{sto}.
 
-\subsubsection{} Der Kausativ des transitiven Verbs \N{new} kann ebenfalls einen Objektsatz mit \N{futa} nehmen, \Npawl{pol oeru neykew futa oel yivom teyluti}
-\E{Er brachte mich dazu, Teylu essen zu wollen} (wörtl. \E{Er brachte mich dazu, zu wollen, Teylu zu essen}). \index{new@\textbf{new}!Kausativ}
+\subsubsection{} Der Kausativ des transitiven Verbs \N{new} kann ebenfalls einen Objektsatz mit \N{futa} (und einem optionalen Subjunktiv) nehmen:\index{new@\textbf{new}!Kausativ}
+
+\begin{interlin}
+	\glll \Npawl{}Pol oeru neykew futa oel yivom teyluti. \\
+	po-l oe-ru n\INF{eyk}ew fì-'u-t-a oe-l y\INF{iv}om teylu-ti \\
+	\I{3sg-agt} \I{1sg-dat} wollen\I{\INF{caus}} \I{dem.prox}-Sache-\I{pat-rel} \I{1sg-agt} essen\I{\INF{subj}} Käferlarve-\I{pat} \\
+	\trans{Er bringt mich dazu, Käferlarven essen zu wollen.}
+\end{interlin}
 \LNWiki{3/10/2010}{https://wiki.learnnavi.org/Canon/2010/UltxaAyharyu\%C3\%A4\#He\_made\_me\_want\_to\_make\_you\_eat\_teylu}
 \LNForum{29/11/2020}{https://forum.learnnavi.org/index.php?msg=673724}
 
